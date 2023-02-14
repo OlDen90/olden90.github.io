@@ -1,0 +1,1 @@
+отработка FLEXBOX и SCSS
