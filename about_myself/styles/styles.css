@@ -88,7 +88,7 @@ body {
 .skills,
 .why,
 .experience {
-    width: 650px;
+    max-width: 650px;
     margin: 0px 90px 30px 90px;
 }
 
@@ -305,8 +305,8 @@ body {
         padding-top: 0;
     }
 
-    .skills {
-        width: 50%;
+    .shortly {
+        width: auto;
     }
 
     .contacts {
@@ -365,11 +365,11 @@ body {
     }
 
     .photo {
-        width: 100%;
+        width: auto;
     }
 
     .shortly {
-        width: 100%;
+        width: auto;
     }
 
     .contacts {
