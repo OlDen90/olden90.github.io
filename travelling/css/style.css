@@ -118,10 +118,15 @@ body._lock {
 
 .wrapper {
   min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .page {
   padding: 70px 0px 0px 0px;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .page_section {
@@ -138,6 +143,7 @@ body._lock {
   max-width: 1200px;
   margin: 0px auto;
   background-color: rgba(0, 0, 0, 0.55);
+  flex: 1 1 auto;
 }
 
 /* ------------- */
