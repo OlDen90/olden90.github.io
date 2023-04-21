@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="ru">
+<!-- <html lang="ru"> -->
+<html lang="zxx">
 
 <head>
     <meta charset="UTF-8">
@@ -286,6 +287,25 @@
     </div>
     <!-- Подключаем файл JS скриптов -->
     <script src="../../js/script.js"></script>
+
+    <script src="../../js/slides/jquery-1.11.1.min.js"></script>
+
+    <!-- Local jQuery Fallback-->
+    <script>window.jQuery || document.write('<script src="../../js/slides/jquery-1.11.1.min.js">\x3C/script>')</script>
+    <!-- Custom jQuery Mobile for swipe functions-->
+    <script src="../../js/slides/jquery.mobile.custom.min.js"></script>
+    <!-- slideshow.js-->
+    <script src="../../js/slides/slides.min.js"></script>
+
+    <script>
+        // $("div.slides_full_thumbs").slides({ thumbs: "on" });
+        // $("div.slides_full_thumbs").slides({ controller: "on" });
+        // $("div.slides_full_thumbs").slides({ thumbs: "on", controller: "on" });
+        // $("div.slides_full_thumbs").slides({ controller: "on", markers: "off" });
+        $("div.slides_full_thumbs").slides({ full_width_image: "on" });
+        // $("div.slides_full_thumbs").slides({ thumbs: "on", full_width_image: "on" });
+        // $("div.slides_full_thumbs").slides({ thumbs: "on", full_width_image: "on", controller: "on" });
+    </script>
 </body>
 
 </html>
