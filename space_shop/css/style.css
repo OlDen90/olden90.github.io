@@ -145,6 +145,16 @@ body {
   background: linear-gradient(87.23deg, rgba(128, 26, 179, 0) -91.42%, #4C4CFF 99.79%);
   border-radius: 4px;
 }
+@media (max-width: 600px) {
+  .content .cards__body .cards__row .cards__column {
+    flex: 1 1 50%;
+  }
+}
+@media (max-width: 432px) {
+  .content .cards__body .cards__row .cards__column {
+    flex: 1 1 auto;
+  }
+}
 .content .card_day {
   margin: 0px 0px 60px 0px;
 }
