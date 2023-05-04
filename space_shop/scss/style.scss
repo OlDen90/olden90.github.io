@@ -179,6 +179,14 @@ body {
             @media (max-width: 432px) {
                 .cards__column {
                     flex: 1 1 auto;
+                    padding: 0px 40px 30px 40px;
+                }
+            }
+
+            @media (max-width: 356px) {
+                .cards__column {
+                    flex: 1 1 auto;
+                    padding: 0px 15px 15px 15px;
                 }
             }
         }
@@ -365,9 +373,6 @@ body {
                 }
 
                 @media (max-width: 600px) {
-                    .card_day__row {
-                        flex-wrap: wrap;
-                    }
 
                     .card_day__image {
                         max-width: 100%;
@@ -381,6 +386,13 @@ body {
                     }
                 }
             }
+
+            @media (max-width: 600px) {
+                .card_day__row {
+                    flex-wrap: wrap;
+                }
+            }
+
 
             .card_day__promocod_button {
                 padding: 0px 0px 35px 0px;
@@ -426,13 +438,27 @@ body {
 
                 @media (max-width: 450px) {
                     .card_day__promocod {
-                        margin: 0px 70px 10px 70px;
+                        margin: 0px 40px 10px 40px;
                     }
 
                     .card_day__button {
-                        margin: 0px 70px 0px 70px;
+                        margin: 0px 40px 0px 40px;
                     }
                 }
+            }
+        }
+
+        @media (max-width: 432px) {
+            .card_day__body {
+                margin-left: 40px;
+                margin-right: 40px;
+            }
+        }
+
+        @media (max-width: 356px) {
+            .card_day__body {
+                margin-left: 40px;
+                margin-right: 40px;
             }
         }
     }
