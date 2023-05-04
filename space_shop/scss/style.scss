@@ -169,6 +169,18 @@ body {
                     }
                 }
             }
+
+            @media (max-width: 600px) {
+                .cards__column {
+                    flex: 1 1 50%;
+                }
+            }
+
+            @media (max-width: 432px) {
+                .cards__column {
+                    flex: 1 1 auto;
+                }
+            }
         }
     }
 
