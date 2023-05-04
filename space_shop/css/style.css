@@ -1,0 +1,439 @@
+@charset "UTF-8";
+/* Обнуление */
+@import "../css/null.css";
+/* -------------------- */
+body {
+  background: #131316;
+  max-width: 1000px;
+  margin: 0px auto;
+}
+
+.wrapper {
+  background-image: url("../img/bg_main.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-attachment: local;
+}
+
+.container {
+  max-width: 650px;
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+
+.header .header__row {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px 50px 0px;
+}
+.header .header__button {
+  font-family: "Segoe UI";
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0px 12px;
+  margin: 10px 0px 10px 0px;
+  background: linear-gradient(87.23deg, rgba(128, 26, 179, 0) -91.42%, #4C4CFF 99.79%);
+  border-radius: 4px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.title {
+  font-size: 32px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0px 0px 28px 0px;
+}
+
+.content .background_image {
+  height: 500px;
+  background: linear-gradient(180deg, rgba(19, 19, 22, 0) 0%, #131316 100%);
+  position: absolute;
+  width: 100%;
+  top: 160px;
+  left: 0px;
+  z-index: 1;
+}
+.content .cards {
+  margin: 0px 0px 50px 0px;
+  position: relative;
+  z-index: 2;
+}
+.content .cards__body {
+  max-width: 650px;
+  margin: 0px auto;
+}
+.content .cards__body .cards__row {
+  display: flex;
+  margin: 0px -5px;
+  flex-wrap: wrap;
+}
+.content .cards__body .cards__row .cards__column {
+  flex: 1 1 33.333%;
+  padding: 0px 5px 10px 5px;
+  display: flex;
+}
+.content .cards__body .cards__row .cards__column .cards__item {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 4px;
+  text-align: center;
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+}
+.content .cards__body .cards__row .cards__column .cards__item .cards__image {
+  max-width: 100%;
+  min-height: 150px;
+  flex: 1 1 auto;
+}
+.content .cards__body .cards__row .cards__column .cards__item .cards__image img {
+  position: relative;
+  top: 50%;
+  width: 100%;
+  height: auto;
+  transform: translateY(-50%);
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.content .cards__body .cards__row .cards__column .cards__item .cards__text {
+  line-height: 21px;
+  align-items: center;
+  color: #131316;
+  padding: 0px 10px 12px 10px;
+  flex: 1 1 auto;
+}
+.content .cards__body .cards__row .cards__column .cards__item .cards__price {
+  display: flex;
+  padding: 0px 10px 10px 10px;
+  justify-content: space-around;
+}
+.content .cards__body .cards__row .cards__column .cards__item .cards__price .cards__price_old {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration-line: line-through;
+  flex: 1 1 auto;
+  justify-content: center;
+  color: #D9D9D9;
+}
+.content .cards__body .cards__row .cards__column .cards__item .cards__price .cards__price_new {
+  font-weight: 700;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #131316;
+  flex: 1 1 auto;
+  justify-content: center;
+}
+.content .cards__body .cards__row .cards__column .cards__item .cards__price .cards__new_price {
+  justify-content: flex-start;
+}
+.content .cards__body .cards__row .cards__column .cards__item .cards__btn {
+  display: block;
+  margin: 0px 10px 10px 10px;
+  padding: 13px 0px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: linear-gradient(87.23deg, rgba(128, 26, 179, 0) -91.42%, #4C4CFF 99.79%);
+  border-radius: 4px;
+}
+@media (max-width: 600px) {
+  .content .cards__body .cards__row .cards__column {
+    flex: 1 1 50%;
+  }
+}
+@media (max-width: 432px) {
+  .content .cards__body .cards__row .cards__column {
+    flex: 1 1 auto;
+    padding: 0px 40px 30px 40px;
+  }
+}
+@media (max-width: 356px) {
+  .content .cards__body .cards__row .cards__column {
+    flex: 1 1 auto;
+    padding: 0px 15px 15px 15px;
+  }
+}
+.content .card_day {
+  margin: 0px 0px 60px 0px;
+}
+.content .card_day .card_day__body {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 4px;
+}
+.content .card_day .card_day__body .card_day__row {
+  padding: 30px 5px 35px 5px;
+  display: flex;
+}
+.content .card_day .card_day__body .card_day__row .card_day__image {
+  max-width: 100%;
+  min-height: 150px;
+}
+.content .card_day .card_day__body .card_day__row .card_day__image img {
+  position: relative;
+  top: 50%;
+  width: 100%;
+  height: auto;
+  transform: translateY(-50%);
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.content .card_day .card_day__body .card_day__row .card_day__column {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 50%;
+  padding: 0px 60px 0px 5px;
+}
+.content .card_day .card_day__body .card_day__row .card_day__column .card_day__rating ul {
+  display: flex;
+  margin: 0px 0px 17px 0px;
+}
+.content .card_day .card_day__body .card_day__row .card_day__column .card_day__rating ul img {
+  margin: 0px 8px 0px 0px;
+  width: 28px;
+}
+.content .card_day .card_day__body .card_day__row .card_day__column .card_day__title {
+  display: flex;
+  align-items: center;
+  margin: 0px 0px 10px 0px;
+  color: #131316;
+}
+.content .card_day .card_day__body .card_day__row .card_day__column .card_day__text {
+  font-size: 13px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  margin: 0px 0px 17px 0px;
+  color: #131316;
+}
+.content .card_day .card_day__body .card_day__row .card_day__column .card_day__price {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0px 0px 20px 0px;
+}
+.content .card_day .card_day__body .card_day__row .card_day__column .card_day__price .card_day__price_old {
+  display: flex;
+  align-items: center;
+  text-decoration-line: line-through;
+  margin: 0px 0px 5px 0px;
+  color: #D9D9D9;
+}
+.content .card_day .card_day__body .card_day__row .card_day__column .card_day__price .card_day__price_discount {
+  display: flex;
+  align-items: center;
+  text-decoration-line: line-through;
+  margin: 0px 0px 5px 0px;
+  color: #D9D9D9;
+}
+.content .card_day .card_day__body .card_day__row .card_day__column .card_day__price .card_day__price_promocode {
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  margin: 0px 0px 5px 0px;
+  color: #131316;
+}
+.content .card_day .card_day__body .card_day__row .card_day__column .card_day__price .card_day__percent {
+  margin-left: 8px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  background: #FF0000;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin: 0px 0px 5px 5px;
+}
+.content .card_day .card_day__body .card_day__row .card_day__column .card_day__discounts {
+  display: flex;
+  flex-direction: column;
+}
+.content .card_day .card_day__body .card_day__row .card_day__column .card_day__discounts .card_day__discount_spaceshop {
+  display: flex;
+  justify-content: space-between;
+  color: #131316;
+  margin: 0px 0px 8px 0px;
+}
+.content .card_day .card_day__body .card_day__row .card_day__column .card_day__discounts .card_day__discount_spaceshop .discount_spaceshop__text {
+  font-size: 13px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+}
+.content .card_day .card_day__body .card_day__row .card_day__column .card_day__discounts .card_day__discount_spaceshop .discount_spaceshop__num {
+  font-size: 13px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+}
+.content .card_day .card_day__body .card_day__row .card_day__column .card_day__discounts .card_day__discount_promocode {
+  display: flex;
+  justify-content: space-between;
+  color: #131316;
+  margin: 0px 0px 8px 0px;
+}
+.content .card_day .card_day__body .card_day__row .card_day__column .card_day__discounts .card_day__discount_promocode .discount_promocode__text {
+  font-size: 13px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+}
+.content .card_day .card_day__body .card_day__row .card_day__column .card_day__discounts .card_day__discount_promocode .discount_promocode__num {
+  font-size: 13px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+}
+.content .card_day .card_day__body .card_day__row .card_day__column .card_day__discounts .card_day__discount_total {
+  display: flex;
+  justify-content: space-between;
+  color: #131316;
+}
+.content .card_day .card_day__body .card_day__row .card_day__column .card_day__discounts .card_day__discount_total .discount_total__text {
+  font-size: 13px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+}
+.content .card_day .card_day__body .card_day__row .card_day__column .card_day__discounts .card_day__discount_total .discount_total__num {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  color: #FF0000;
+}
+@media (max-width: 600px) {
+  .content .card_day .card_day__body .card_day__row .card_day__image {
+    max-width: 100%;
+    min-height: 150px;
+    flex: 1 1 auto;
+  }
+  .content .card_day .card_day__body .card_day__row .card_day__column {
+    flex: 1 1 auto;
+    padding: 0px 15px 0px 15px;
+  }
+}
+@media (max-width: 600px) {
+  .content .card_day .card_day__body .card_day__row {
+    flex-wrap: wrap;
+  }
+}
+.content .card_day .card_day__body .card_day__promocod_button {
+  padding: 0px 0px 35px 0px;
+}
+.content .card_day .card_day__body .card_day__promocod_button .card_day__promocod {
+  font-weight: 700;
+  line-height: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #131316;
+  box-sizing: border-box;
+  border: 1px dashed #131316;
+  border-radius: 4px;
+  margin: 0px 170px 10px 170px;
+  padding: 18px 0px;
+}
+.content .card_day .card_day__body .card_day__promocod_button .card_day__button {
+  display: block;
+  margin: 0px 170px 0px 170px;
+  padding: 22px 0px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: linear-gradient(87.23deg, rgba(128, 26, 179, 0) -91.42%, #4C4CFF 99.79%);
+  border-radius: 4px;
+}
+@media (max-width: 600px) {
+  .content .card_day .card_day__body .card_day__promocod_button .card_day__promocod {
+    margin: 0px 120px 10px 120px;
+  }
+  .content .card_day .card_day__body .card_day__promocod_button .card_day__button {
+    margin: 0px 120px 0px 120px;
+  }
+}
+@media (max-width: 450px) {
+  .content .card_day .card_day__body .card_day__promocod_button .card_day__promocod {
+    margin: 0px 40px 10px 40px;
+  }
+  .content .card_day .card_day__body .card_day__promocod_button .card_day__button {
+    margin: 0px 40px 0px 40px;
+  }
+}
+@media (max-width: 432px) {
+  .content .card_day .card_day__body {
+    margin: 0px 35px;
+  }
+}
+@media (max-width: 356px) {
+  .content .card_day .card_day__body {
+    margin: 0px 10px;
+  }
+}
+
+.footer .footer__column .footer__top {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 0px 28px 0px;
+}
+.footer .footer__column .footer__top .footer__top_text {
+  line-height: 21px;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0px 0px 20px 0px;
+}
+.footer .footer__column .footer__top .footer__top_icons {
+  text-align: center;
+}
+.footer .footer__column .footer__top .footer__top_icons ul {
+  display: flex;
+  display: inline-flex;
+}
+.footer .footer__column .footer__top .footer__top_icons ul li {
+  background: #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0px 18px 0px 0px;
+}
+.footer .footer__column .footer__top .footer__top_icons ul li:last-child {
+  margin: 0;
+}
+.footer .footer__column .footer__down {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer__column .footer__down .footer__down_contacts {
+  margin: 0px 0px 26px 0px;
+}
+.footer .footer__column .footer__down .footer__down_contacts .down_contacts__contact {
+  font-size: 13px;
+  line-height: 17px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer .footer__column .footer__down .footer__down_contacts .down_contacts__phone {
+  line-height: 21px;
+  color: #FFFFFF;
+}
+.footer .footer__column .footer__down .footer__down_contacts .down_contacts__mail {
+  line-height: 21px;
+  text-decoration-line: underline;
+  color: #FFFFFF;
+}/*# sourceMappingURL=style.css.map */
