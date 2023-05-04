@@ -186,7 +186,7 @@ body {
             @media (max-width: 356px) {
                 .cards__column {
                     flex: 1 1 auto;
-                    padding: 0px 15px 15px 15px;
+                    margin: 0px 15px 15px 15px;
                 }
             }
         }
@@ -450,15 +450,13 @@ body {
 
         @media (max-width: 432px) {
             .card_day__body {
-                margin-left: 40px;
-                margin-right: 40px;
+                margin: 0px 35px;
             }
         }
 
         @media (max-width: 356px) {
             .card_day__body {
-                margin-left: 40px;
-                margin-right: 40px;
+                margin: 0px 10px;
             }
         }
     }
