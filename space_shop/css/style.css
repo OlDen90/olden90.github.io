@@ -153,6 +153,13 @@ body {
 @media (max-width: 432px) {
   .content .cards__body .cards__row .cards__column {
     flex: 1 1 auto;
+    padding: 0px 40px 30px 40px;
+  }
+}
+@media (max-width: 356px) {
+  .content .cards__body .cards__row .cards__column {
+    flex: 1 1 auto;
+    padding: 0px 15px 15px 15px;
   }
 }
 .content .card_day {
@@ -309,9 +316,6 @@ body {
   color: #FF0000;
 }
 @media (max-width: 600px) {
-  .content .card_day .card_day__body .card_day__row .card_day__row {
-    flex-wrap: wrap;
-  }
   .content .card_day .card_day__body .card_day__row .card_day__image {
     max-width: 100%;
     min-height: 150px;
@@ -320,6 +324,11 @@ body {
   .content .card_day .card_day__body .card_day__row .card_day__column {
     flex: 1 1 auto;
     padding: 0px 15px 0px 15px;
+  }
+}
+@media (max-width: 600px) {
+  .content .card_day .card_day__body .card_day__row {
+    flex-wrap: wrap;
   }
 }
 .content .card_day .card_day__body .card_day__promocod_button {
@@ -362,10 +371,22 @@ body {
 }
 @media (max-width: 450px) {
   .content .card_day .card_day__body .card_day__promocod_button .card_day__promocod {
-    margin: 0px 70px 10px 70px;
+    margin: 0px 40px 10px 40px;
   }
   .content .card_day .card_day__body .card_day__promocod_button .card_day__button {
-    margin: 0px 70px 0px 70px;
+    margin: 0px 40px 0px 40px;
+  }
+}
+@media (max-width: 432px) {
+  .content .card_day .card_day__body {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+@media (max-width: 356px) {
+  .content .card_day .card_day__body {
+    margin-left: 40px;
+    margin-right: 40px;
   }
 }
 
