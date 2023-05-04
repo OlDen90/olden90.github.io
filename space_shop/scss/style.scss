@@ -1,0 +1,496 @@
+/* Обнуление */
+@import "../css/null.css";
+
+/* -------------------- */
+
+body {
+    background: #131316;
+    max-width: 1000px;
+    margin: 0px auto;
+}
+
+.wrapper {
+    background-image: url("../img/bg_main.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-attachment: local;
+}
+
+.container {
+    max-width: 650px;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+
+.header__container {}
+
+.header {
+
+    .header__row {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0px 50px 0px;
+    }
+
+    .header_logo {}
+
+    .header__button {
+        font-family: 'Segoe UI';
+        font-size: 16px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+
+        padding: 0px 12px;
+        margin: 10px 0px 10px 0px;
+        background: linear-gradient(87.23deg, rgba(128, 26, 179, 0) -91.42%, #4C4CFF 99.79%);
+        border-radius: 4px;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+}
+
+.title {
+    font-size: 32px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0px 0px 28px 0px;
+}
+
+.content {
+    .background_image {
+        height: 500px;
+        background: linear-gradient(180deg, rgba(19, 19, 22, 0) 0%, #131316 100%);
+        position: absolute;
+        width: 100%;
+        top: 160px;
+        left: 0px;
+        z-index: 1;
+    }
+
+    .cards {
+        margin: 0px 0px 50px 0px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .cards__title {}
+
+    .cards__body {
+        max-width: 650px;
+        margin: 0px auto;
+
+        .cards__row {
+            display: flex;
+            margin: 0px -5px;
+            flex-wrap: wrap;
+
+            .cards__column {
+                flex: 1 1 33.333%;
+                padding: 0px 5px 10px 5px;
+                display: flex;
+
+                .cards__item {
+                    background: rgba(255, 255, 255, 0.95);
+                    border-radius: 4px;
+                    text-align: center;
+                    align-items: stretch;
+                    display: flex; // для опуска кнопки вниз
+                    flex-direction: column; // для опуска кнопки вниз
+
+                    .cards__image {
+                        max-width: 100%;
+                        min-height: 150px;
+                        // overflow: hidden;
+                        flex: 1 1 auto;
+
+                        & img {
+                            position: relative;
+                            top: 50%;
+                            width: 100%;
+                            height: auto;
+                            transform: translateY(-50%);
+                            object-fit: contain;
+                        }
+                    }
+
+                    .cards__text {
+                        line-height: 21px;
+                        align-items: center;
+                        color: #131316;
+                        padding: 0px 10px 12px 10px;
+                        flex: 1 1 auto; // для опуска кнопки вниз
+                    }
+
+                    .cards__price {
+                        display: flex;
+                        padding: 0px 10px 10px 10px;
+                        justify-content: space-around;
+
+                        .cards__price_old {
+                            display: flex;
+                            align-items: center;
+                            text-align: center;
+                            text-decoration-line: line-through;
+                            flex: 1 1 auto;
+                            justify-content: center;
+                            color: #D9D9D9;
+                        }
+
+                        .cards__price_new {
+                            font-weight: 700;
+                            font-size: 24px;
+                            display: flex;
+                            align-items: center;
+                            text-align: center;
+                            color: #131316;
+                            flex: 1 1 auto;
+                            justify-content: center;
+                        }
+
+                        .cards__new_price {
+                            justify-content: flex-start;
+                        }
+                    }
+
+                    .cards__btn {
+                        display: block;
+                        margin: 0px 10px 10px 10px;
+                        padding: 13px 0px;
+                        text-align: center;
+                        letter-spacing: 0.06em;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                        background: linear-gradient(87.23deg, rgba(128, 26, 179, 0) -91.42%, #4C4CFF 99.79%);
+                        border-radius: 4px;
+                    }
+                }
+            }
+        }
+    }
+
+    .card_day {
+        margin: 0px 0px 60px 0px;
+
+        .card_day__body {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 4px;
+
+            .card_day__row {
+                padding: 30px 5px 35px 5px;
+                display: flex;
+
+                .card_day__image {
+                    max-width: 100%;
+                    min-height: 150px;
+                    // flex: 1 1 auto;
+
+                    & img {
+                        position: relative;
+                        top: 50%;
+                        width: 100%;
+                        height: auto;
+                        transform: translateY(-50%);
+                        object-fit: contain;
+                    }
+                }
+
+                .card_day__column {
+                    display: flex;
+                    flex-direction: column;
+                    flex: 0 1 50%;
+                    padding: 0px 60px 0px 5px;
+
+                    .card_day__rating ul {
+                        display: flex;
+                        margin: 0px 0px 17px 0px;
+
+                        & img {
+                            margin: 0px 8px 0px 0px;
+                            width: 28px;
+                        }
+                    }
+
+                    .card_day__title {
+                        display: flex;
+                        align-items: center;
+                        margin: 0px 0px 10px 0px;
+
+                        color: #131316;
+                    }
+
+                    .card_day__text {
+                        font-size: 13px;
+                        line-height: 17px;
+                        display: flex;
+                        align-items: center;
+                        margin: 0px 0px 17px 0px;
+
+                        color: #131316;
+                    }
+
+                    .card_day__price {
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        margin: 0px 0px 20px 0px;
+
+
+                        .card_day__price_old {
+                            display: flex;
+                            align-items: center;
+                            text-decoration-line: line-through;
+                            margin: 0px 0px 5px 0px;
+                            color: #D9D9D9;
+                        }
+
+                        .card_day__price_discount {
+                            display: flex;
+                            align-items: center;
+                            text-decoration-line: line-through;
+                            margin: 0px 0px 5px 0px;
+                            color: #D9D9D9;
+                        }
+
+                        .card_day__price_promocode {
+                            font-weight: 700;
+                            display: flex;
+                            align-items: center;
+                            margin: 0px 0px 5px 0px;
+                            color: #131316;
+                        }
+
+                        .card_day__percent {
+                            margin-left: 8px;
+                            font-weight: 700;
+                            display: flex;
+                            align-items: center;
+                            text-align: center;
+
+                            color: #FFFFFF;
+
+                            background: #FF0000;
+                            border-radius: 4px;
+                            padding: 5px 10px;
+                            margin: 0px 0px 5px 5px;
+                        }
+                    }
+
+                    .card_day__discounts {
+                        display: flex;
+                        flex-direction: column;
+
+                        .card_day__discount_spaceshop {
+                            display: flex;
+                            justify-content: space-between;
+                            color: #131316;
+                            margin: 0px 0px 8px 0px;
+
+                            .discount_spaceshop__text {
+                                font-size: 13px;
+                                line-height: 17px;
+                                display: flex;
+                                align-items: center;
+                            }
+
+                            .discount_spaceshop__num {
+                                font-size: 13px;
+                                line-height: 17px;
+                                display: flex;
+                                align-items: center;
+                                text-align: right;
+                            }
+                        }
+
+                        .card_day__discount_promocode {
+                            display: flex;
+                            justify-content: space-between;
+                            color: #131316;
+                            margin: 0px 0px 8px 0px;
+
+                            .discount_promocode__text {
+                                font-size: 13px;
+                                line-height: 17px;
+                                display: flex;
+                                align-items: center;
+                            }
+
+                            .discount_promocode__num {
+                                font-size: 13px;
+                                line-height: 17px;
+                                display: flex;
+                                align-items: center;
+                                text-align: right;
+                            }
+                        }
+
+                        .card_day__discount_total {
+                            display: flex;
+                            justify-content: space-between;
+                            color: #131316;
+
+                            .discount_total__text {
+                                font-size: 13px;
+                                line-height: 17px;
+                                display: flex;
+                                align-items: center;
+                            }
+
+                            .discount_total__num {
+                                font-weight: 700;
+                                font-size: 13px;
+                                line-height: 17px;
+                                display: flex;
+                                align-items: center;
+                                text-align: right;
+                                color: #FF0000;
+                            }
+                        }
+                    }
+                }
+
+                @media (max-width: 600px) {
+                    .card_day__row {
+                        flex-wrap: wrap;
+                    }
+
+                    .card_day__image {
+                        max-width: 100%;
+                        min-height: 150px;
+                        flex: 1 1 auto;
+                    }
+
+                    .card_day__column {
+                        flex: 1 1 auto;
+                        padding: 0px 15px 0px 15px;
+                    }
+                }
+            }
+
+            .card_day__promocod_button {
+                padding: 0px 0px 35px 0px;
+
+                .card_day__promocod {
+                    font-weight: 700;
+                    line-height: 21px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    letter-spacing: 0.06em;
+                    text-transform: uppercase;
+                    color: #131316;
+                    box-sizing: border-box;
+                    border: 1px dashed #131316;
+                    border-radius: 4px;
+                    margin: 0px 170px 10px 170px;
+                    padding: 18px 0px;
+                }
+
+                .card_day__button {
+                    display: block;
+                    margin: 0px 170px 0px 170px;
+                    padding: 22px 0px;
+                    text-align: center;
+                    letter-spacing: 0.06em;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    background: linear-gradient(87.23deg, rgba(128, 26, 179, 0) -91.42%, #4C4CFF 99.79%);
+                    border-radius: 4px;
+                }
+
+                @media (max-width: 600px) {
+                    .card_day__promocod {
+                        margin: 0px 120px 10px 120px;
+                    }
+
+                    .card_day__button {
+                        margin: 0px 120px 0px 120px;
+                    }
+                }
+
+                @media (max-width: 450px) {
+                    .card_day__promocod {
+                        margin: 0px 70px 10px 70px;
+                    }
+
+                    .card_day__button {
+                        margin: 0px 70px 0px 70px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    .footer__column {
+        .footer__top {
+            display: flex;
+            flex-direction: column;
+            margin: 0px 0px 28px 0px;
+
+            .footer__top_text {
+                line-height: 21px;
+                align-items: center;
+                text-align: center;
+                color: #FFFFFF;
+                margin: 0px 0px 20px 0px;
+            }
+
+            .footer__top_icons {
+                text-align: center;
+
+                & ul {
+                    display: flex;
+                    display: inline-flex;
+
+                    & li {
+                        background: #fff;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        margin: 0px 18px 0px 0px;
+
+                        &:last-child {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer__down {
+            display: flex;
+            justify-content: space-between;
+
+            .footer__down_contacts {
+                margin: 0px 0px 26px 0px;
+
+                .down_contacts__contact {
+                    font-size: 13px;
+                    line-height: 17px;
+
+                    color: rgba(255, 255, 255, 0.5);
+                }
+
+                .down_contacts__phone {
+                    line-height: 21px;
+
+                    color: #FFFFFF;
+                }
+
+                .down_contacts__mail {
+                    line-height: 21px;
+                    text-decoration-line: underline;
+
+                    color: #FFFFFF;
+                }
+            }
+
+            .footer__down_logo {}
+        }
+    }
+}
