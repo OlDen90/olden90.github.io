@@ -155,7 +155,7 @@ body {
     padding-right: calc(10px + 30 * (100vw - 320px) / 94);
   }
 }
-@media (max-width: 638px) {
+@media (max-width: 600px) {
   .content .cards__body .cards__row .cards__column {
     flex: 1 1 50%;
   }
