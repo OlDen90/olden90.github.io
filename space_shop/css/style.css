@@ -106,6 +106,10 @@ body {
   color: #131316;
   padding: 0px 10px 12px 10px;
   flex: 1 1 auto;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-word;
+  word-break: break-word;
 }
 .content .cards__body .cards__row .cards__column .cards__item .cards__price {
   display: flex;
@@ -145,21 +149,20 @@ body {
   background: linear-gradient(87.23deg, rgba(128, 26, 179, 0) -91.42%, #4C4CFF 99.79%);
   border-radius: 4px;
 }
-@media (max-width: 600px) {
+@media (max-width: 414px) {
+  .content .cards__body .cards__row .cards__column .cards__item .cards__text {
+    padding-left: calc(10px + 30 * (100vw - 320px) / 94);
+    padding-right: calc(10px + 30 * (100vw - 320px) / 94);
+  }
+}
+@media (max-width: 638px) {
   .content .cards__body .cards__row .cards__column {
     flex: 1 1 50%;
   }
 }
-@media (max-width: 432px) {
+@media (max-width: 414px) {
   .content .cards__body .cards__row .cards__column {
-    flex: 1 1 auto;
-    padding: 0px 40px 30px 40px;
-  }
-}
-@media (max-width: 356px) {
-  .content .cards__body .cards__row .cards__column {
-    flex: 1 1 auto;
-    padding: 0px 15px 15px 15px;
+    flex: 0 1 100%;
   }
 }
 .content .card_day {
@@ -375,16 +378,6 @@ body {
   }
   .content .card_day .card_day__body .card_day__promocod_button .card_day__button {
     margin: 0px 40px 0px 40px;
-  }
-}
-@media (max-width: 432px) {
-  .content .card_day .card_day__body {
-    margin: 0px 35px;
-  }
-}
-@media (max-width: 356px) {
-  .content .card_day .card_day__body {
-    margin: 0px 10px;
   }
 }
 
