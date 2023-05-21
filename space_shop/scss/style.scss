@@ -29,7 +29,7 @@ body {
     .header__row {
         display: flex;
         justify-content: space-between;
-        padding: 20px 0px 50px 0px;
+        padding: 20px 0px 49px 0px;
     }
 
     .header_logo {}
@@ -37,7 +37,6 @@ body {
     .header__button {
         font-family: 'Segoe UI';
         font-size: 16px;
-        line-height: 21px;
         display: flex;
         align-items: center;
         text-align: center;
@@ -57,7 +56,7 @@ body {
     font-size: 32px;
     text-align: center;
     color: #FFFFFF;
-    margin: 0px 0px 28px 0px;
+    margin: 0px 0px 29px 0px;
 }
 
 .content {
@@ -72,7 +71,7 @@ body {
     }
 
     .cards {
-        margin: 0px 0px 50px 0px;
+        margin: 0px 0px 48px 0px;
         position: relative;
         z-index: 2;
     }
@@ -98,14 +97,14 @@ body {
                     border-radius: 4px;
                     text-align: center;
                     align-items: stretch;
+                    flex: 1 1 100%;
                     display: flex; // для опуска кнопки вниз
                     flex-direction: column; // для опуска кнопки вниз
 
                     .cards__image {
                         max-width: 100%;
                         min-height: 150px;
-                        // overflow: hidden;
-                        flex: 1 1 auto;
+                        flex: 1 1 100%;
 
                         & img {
                             position: relative;
@@ -114,6 +113,7 @@ body {
                             height: auto;
                             transform: translateY(-50%);
                             object-fit: contain;
+                            padding: 4px 0px 3px 0px;
                         }
                     }
 
@@ -121,9 +121,8 @@ body {
                         line-height: 21px;
                         align-items: center;
                         color: #131316;
-                        padding: 0px 10px 12px 10px;
+                        padding: 0px 10px 11px 10px;
                         flex: 1 1 auto; // для опуска кнопки вниз
-
 
                         overflow-wrap: break-word;
                         word-wrap: break-word;
@@ -134,15 +133,14 @@ body {
 
                     .cards__price {
                         display: flex;
-                        padding: 0px 10px 10px 10px;
-                        justify-content: space-around;
+                        padding: 0px 10px 13px 10px;
 
                         .cards__price_old {
                             display: flex;
                             align-items: center;
                             text-align: center;
                             text-decoration-line: line-through;
-                            flex: 1 1 auto;
+                            flex: 1 1 50%;
                             justify-content: center;
                             color: #D9D9D9;
                         }
@@ -154,21 +152,17 @@ body {
                             align-items: center;
                             text-align: center;
                             color: #131316;
-                            flex: 1 1 auto;
+                            flex: 1 1 50%;
                             justify-content: center;
-                        }
-
-                        .cards__new_price {
-                            justify-content: flex-start;
                         }
                     }
 
                     .cards__btn {
                         display: block;
                         margin: 0px 10px 10px 10px;
-                        padding: 13px 0px;
+                        padding: 12px 0px 12px 1px;
                         text-align: center;
-                        letter-spacing: 0.06em;
+                        letter-spacing: 0.07em;
                         text-transform: uppercase;
                         color: #FFFFFF;
                         background: linear-gradient(87.23deg, rgba(128, 26, 179, 0) -91.42%, #4C4CFF 99.79%);
@@ -212,7 +206,7 @@ body {
             border-radius: 4px;
 
             .card_day__row {
-                padding: 30px 5px 35px 5px;
+                padding: 30px 0px 35px 0px;
                 display: flex;
 
                 .card_day__image {
@@ -234,11 +228,11 @@ body {
                     display: flex;
                     flex-direction: column;
                     flex: 0 1 50%;
-                    padding: 0px 60px 0px 5px;
+                    padding: 0px 59px 0px 11px;
 
                     .card_day__rating ul {
                         display: flex;
-                        margin: 0px 0px 17px 0px;
+                        margin: 0px 0px 18px 0px;
 
                         & img {
                             margin: 0px 8px 0px 0px;
@@ -249,7 +243,7 @@ body {
                     .card_day__title {
                         display: flex;
                         align-items: center;
-                        margin: 0px 0px 10px 0px;
+                        margin: 0px 0px 9px 0px;
 
                         color: #131316;
                     }
@@ -259,7 +253,7 @@ body {
                         line-height: 17px;
                         display: flex;
                         align-items: center;
-                        margin: 0px 0px 17px 0px;
+                        margin: 0px 0px 18px 0px;
 
                         color: #131316;
                     }
@@ -268,7 +262,7 @@ body {
                         display: flex;
                         justify-content: space-between;
                         flex-wrap: wrap;
-                        margin: 0px 0px 20px 0px;
+                        margin: 0px 0px 21px 0px;
 
 
                         .card_day__price_old {
@@ -306,7 +300,7 @@ body {
 
                             background: #FF0000;
                             border-radius: 4px;
-                            padding: 5px 10px;
+                            padding: 4px 11px;
                             margin: 0px 0px 5px 5px;
                         }
                     }
@@ -326,6 +320,7 @@ body {
                                 line-height: 17px;
                                 display: flex;
                                 align-items: center;
+                                letter-spacing: 0.01em;
                             }
 
                             .discount_spaceshop__num {
@@ -348,6 +343,7 @@ body {
                                 line-height: 17px;
                                 display: flex;
                                 align-items: center;
+                                letter-spacing: 0.01em;
                             }
 
                             .discount_promocode__num {
