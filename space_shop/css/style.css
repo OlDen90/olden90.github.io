@@ -24,12 +24,11 @@ body {
 .header .header__row {
   display: flex;
   justify-content: space-between;
-  padding: 20px 0px 50px 0px;
+  padding: 20px 0px 49px 0px;
 }
 .header .header__button {
   font-family: "Segoe UI";
   font-size: 16px;
-  line-height: 21px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -47,7 +46,7 @@ body {
   font-size: 32px;
   text-align: center;
   color: #FFFFFF;
-  margin: 0px 0px 28px 0px;
+  margin: 0px 0px 29px 0px;
 }
 
 .content .background_image {
@@ -60,7 +59,7 @@ body {
   z-index: 1;
 }
 .content .cards {
-  margin: 0px 0px 50px 0px;
+  margin: 0px 0px 48px 0px;
   position: relative;
   z-index: 2;
 }
@@ -83,13 +82,14 @@ body {
   border-radius: 4px;
   text-align: center;
   align-items: stretch;
+  flex: 1 1 100%;
   display: flex;
   flex-direction: column;
 }
 .content .cards__body .cards__row .cards__column .cards__item .cards__image {
   max-width: 100%;
   min-height: 150px;
-  flex: 1 1 auto;
+  flex: 1 1 100%;
 }
 .content .cards__body .cards__row .cards__column .cards__item .cards__image img {
   position: relative;
@@ -99,12 +99,13 @@ body {
   transform: translateY(-50%);
   -o-object-fit: contain;
      object-fit: contain;
+  padding: 4px 0px 3px 0px;
 }
 .content .cards__body .cards__row .cards__column .cards__item .cards__text {
   line-height: 21px;
   align-items: center;
   color: #131316;
-  padding: 0px 10px 12px 10px;
+  padding: 0px 10px 11px 10px;
   flex: 1 1 auto;
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -113,15 +114,14 @@ body {
 }
 .content .cards__body .cards__row .cards__column .cards__item .cards__price {
   display: flex;
-  padding: 0px 10px 10px 10px;
-  justify-content: space-around;
+  padding: 0px 10px 13px 10px;
 }
 .content .cards__body .cards__row .cards__column .cards__item .cards__price .cards__price_old {
   display: flex;
   align-items: center;
   text-align: center;
   text-decoration-line: line-through;
-  flex: 1 1 auto;
+  flex: 1 1 50%;
   justify-content: center;
   color: #D9D9D9;
 }
@@ -132,18 +132,15 @@ body {
   align-items: center;
   text-align: center;
   color: #131316;
-  flex: 1 1 auto;
+  flex: 1 1 50%;
   justify-content: center;
-}
-.content .cards__body .cards__row .cards__column .cards__item .cards__price .cards__new_price {
-  justify-content: flex-start;
 }
 .content .cards__body .cards__row .cards__column .cards__item .cards__btn {
   display: block;
   margin: 0px 10px 10px 10px;
-  padding: 13px 0px;
+  padding: 12px 0px 12px 1px;
   text-align: center;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
   color: #FFFFFF;
   background: linear-gradient(87.23deg, rgba(128, 26, 179, 0) -91.42%, #4C4CFF 99.79%);
@@ -173,7 +170,7 @@ body {
   border-radius: 4px;
 }
 .content .card_day .card_day__body .card_day__row {
-  padding: 30px 5px 35px 5px;
+  padding: 30px 0px 35px 0px;
   display: flex;
 }
 .content .card_day .card_day__body .card_day__row .card_day__image {
@@ -193,11 +190,11 @@ body {
   display: flex;
   flex-direction: column;
   flex: 0 1 50%;
-  padding: 0px 60px 0px 5px;
+  padding: 0px 59px 0px 11px;
 }
 .content .card_day .card_day__body .card_day__row .card_day__column .card_day__rating ul {
   display: flex;
-  margin: 0px 0px 17px 0px;
+  margin: 0px 0px 18px 0px;
 }
 .content .card_day .card_day__body .card_day__row .card_day__column .card_day__rating ul img {
   margin: 0px 8px 0px 0px;
@@ -206,7 +203,7 @@ body {
 .content .card_day .card_day__body .card_day__row .card_day__column .card_day__title {
   display: flex;
   align-items: center;
-  margin: 0px 0px 10px 0px;
+  margin: 0px 0px 9px 0px;
   color: #131316;
 }
 .content .card_day .card_day__body .card_day__row .card_day__column .card_day__text {
@@ -214,14 +211,14 @@ body {
   line-height: 17px;
   display: flex;
   align-items: center;
-  margin: 0px 0px 17px 0px;
+  margin: 0px 0px 18px 0px;
   color: #131316;
 }
 .content .card_day .card_day__body .card_day__row .card_day__column .card_day__price {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 0px 0px 20px 0px;
+  margin: 0px 0px 21px 0px;
 }
 .content .card_day .card_day__body .card_day__row .card_day__column .card_day__price .card_day__price_old {
   display: flex;
@@ -253,7 +250,7 @@ body {
   color: #FFFFFF;
   background: #FF0000;
   border-radius: 4px;
-  padding: 5px 10px;
+  padding: 4px 11px;
   margin: 0px 0px 5px 5px;
 }
 .content .card_day .card_day__body .card_day__row .card_day__column .card_day__discounts {
@@ -271,6 +268,7 @@ body {
   line-height: 17px;
   display: flex;
   align-items: center;
+  letter-spacing: 0.01em;
 }
 .content .card_day .card_day__body .card_day__row .card_day__column .card_day__discounts .card_day__discount_spaceshop .discount_spaceshop__num {
   font-size: 13px;
@@ -290,6 +288,7 @@ body {
   line-height: 17px;
   display: flex;
   align-items: center;
+  letter-spacing: 0.01em;
 }
 .content .card_day .card_day__body .card_day__row .card_day__column .card_day__discounts .card_day__discount_promocode .discount_promocode__num {
   font-size: 13px;
