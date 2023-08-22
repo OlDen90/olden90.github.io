@@ -38,12 +38,12 @@ body {
 }
 
 .about-user-text {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 24px;
     color: #595959;
     margin: 0;
     text-align: justify;
-    text-indent: 20px;
+    /* text-indent: 20px; */
 }
 
 .projects {
