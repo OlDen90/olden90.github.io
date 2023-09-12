@@ -1,1330 +1,448 @@
-<!DOCTYPE html
-  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<!DOCTYPE html>
+<html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <meta name="x-apple-disable-message-reformatting">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta content="telephone=no" name="format-detection">
-  <title>Empty Template</title><!--[if (mso 16)]>
-    <style type="text/css">
-    a {text-decoration: none;}
-    </style>
-    <![endif]--><!--[if gte mso 9]><style>sup { font-size: 100% !important; }</style><![endif]--><!--[if gte mso 9]>
-<xml>
-    <o:OfficeDocumentSettings>
-    <o:AllowPNG></o:AllowPNG>
-    <o:PixelsPerInch>96</o:PixelsPerInch>
-    </o:OfficeDocumentSettings>
-</xml>
-<![endif]-->
-  <style type="text/css">
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
-
-    .rollover:hover .rollover-first {
-      max-height: 0px !important;
-      display: none !important;
-    }
-
-    .rollover:hover .rollover-second {
-      max-height: none !important;
-      display: inline-block !important;
-    }
-
-    .rollover div {
-      font-size: 0px;
-    }
-
-    u~div img+div>div {
-      display: none;
-    }
-
-    #outlook a {
-      padding: 0;
-    }
-
-    span.MsoHyperlink,
-    span.MsoHyperlinkFollowed {
-      color: inherit;
-      mso-style-priority: 99;
-    }
-
-    a.es-button {
-      mso-style-priority: 100 !important;
-      text-decoration: none !important;
-    }
-
-    a[x-apple-data-detectors] {
-      color: inherit !important;
-      text-decoration: none !important;
-      font-size: inherit !important;
-      font-family: inherit !important;
-      font-weight: inherit !important;
-      line-height: inherit !important;
-    }
-
-    .es-desk-hidden {
-      display: none;
-      float: left;
-      overflow: hidden;
-      width: 0;
-      max-height: 0;
-      line-height: 0;
-      mso-hide: all;
-    }
-
-    .es-header-body a:hover {
-      color: #2cb543 !important;
-    }
-
-    .es-content-body a:hover {
-      color: #2cb543 !important;
-    }
-
-    .es-footer-body a:hover {
-      color: #ffffff !important;
-    }
-
-    .es-infoblock a:hover {
-      color: #cccccc !important;
-    }
-
-    .es-button-border:hover>a.es-button {
-      color: #ffffff !important;
-    }
-
-    @media only screen and (max-width:600px) {
-      .es-m-p0r {
-        padding-right: 0px !important
-      }
-
-      .es-m-p25r {
-        padding-right: 25px !important
-      }
-
-      .es-m-p25l {
-        padding-left: 25px !important
-      }
-
-      .es-m-p5r {
-        padding-right: 5px !important
-      }
-
-      .es-m-p5l {
-        padding-left: 5px !important
-      }
-
-      .es-m-p25r {
-        padding-right: 25px !important
-      }
-
-      .es-m-p25l {
-        padding-left: 25px !important
-      }
-
-      .es-m-p25r {
-        padding-right: 25px !important
-      }
-
-      .es-m-p25l {
-        padding-left: 25px !important
-      }
-
-      .es-m-p25r {
-        padding-right: 25px !important
-      }
-
-      .es-m-p25l {
-        padding-left: 25px !important
-      }
-
-      .es-m-p25r {
-        padding-right: 25px !important
-      }
-
-      .es-m-p25l {
-        padding-left: 25px !important
-      }
-
-      .es-m-p25r {
-        padding-right: 25px !important
-      }
-
-      .es-m-p25l {
-        padding-left: 25px !important
-      }
-
-      .es-m-p10t {
-        padding-top: 10px !important
-      }
-
-      .es-m-p10r {
-        padding-right: 10px !important
-      }
-
-      .es-m-p10t {
-        padding-top: 10px !important
-      }
-
-      .es-m-p10r {
-        padding-right: 10px !important
-      }
-
-      .es-m-p10r {
-        padding-right: 10px !important
-      }
-
-      .es-m-p25r {
-        padding-right: 25px !important
-      }
-
-      .es-m-p25l {
-        padding-left: 25px !important
-      }
-
-      .es-m-p0r {
-        padding-right: 0px !important
-      }
-
-      .es-m-p0l {
-        padding-left: 0px !important
-      }
-
-      .es-m-p20b {
-        padding-bottom: 20px !important
-      }
-
-      .es-m-p25r {
-        padding-right: 25px !important
-      }
-
-      .es-m-p35b {
-        padding-bottom: 35px !important
-      }
-
-      .es-m-p25l {
-        padding-left: 25px !important
-      }
-
-      .es-m-p25b {
-        padding-bottom: 25px !important
-      }
-
-      .es-m-p0r {
-        padding-right: 0px !important
-      }
-
-      .es-m-p25b {
-        padding-bottom: 25px !important
-      }
-
-      .es-m-p0l {
-        padding-left: 0px !important
-      }
-
-      .es-m-p0r {
-        padding-right: 0px !important
-      }
-
-      .es-m-p25b {
-        padding-bottom: 25px !important
-      }
-
-      .es-m-p0l {
-        padding-left: 0px !important
-      }
-
-      .es-m-p25r {
-        padding-right: 25px !important
-      }
-
-      .es-m-p25l {
-        padding-left: 25px !important
-      }
-
-      .es-m-p25r {
-        padding-right: 25px !important
-      }
-
-      .es-m-p25l {
-        padding-left: 25px !important
-      }
-
-      .es-m-p25r {
-        padding-right: 25px !important
-      }
-
-      .es-m-p25l {
-        padding-left: 25px !important
-      }
-
-      .es-m-p0l {
-        padding-left: 0px !important
-      }
-
-      .es-m-p35t {
-        padding-top: 35px !important
-      }
-
-      .es-m-p25r {
-        padding-right: 25px !important
-      }
-
-      .es-m-p25l {
-        padding-left: 25px !important
-      }
-
-      .es-m-p10b {
-        padding-bottom: 10px !important
-      }
-
-      .es-m-p20b {
-        padding-bottom: 20px !important
-      }
-
-      .es-m-p10t {
-        padding-top: 10px !important
-      }
-
-      .es-m-p25r {
-        padding-right: 25px !important
-      }
-
-      .es-m-p10b {
-        padding-bottom: 10px !important
-      }
-
-      .es-m-p25l {
-        padding-left: 25px !important
-      }
-
-      .es-m-p25r {
-        padding-right: 25px !important
-      }
-
-      .es-m-p25l {
-        padding-left: 25px !important
-      }
-
-      .es-m-p15b {
-        padding-bottom: 15px !important
-      }
-
-      .es-m-p0l {
-        padding-left: 0px !important
-      }
-
-      .es-m-p25r {
-        padding-right: 25px !important
-      }
-
-      .es-m-p25l {
-        padding-left: 25px !important
-      }
-
-      *[class="gmail-fix"] {
-        display: none !important
-      }
-
-      p,
-      a {
-        line-height: 150% !important
-      }
-
-      h1,
-      h1 a {
-        line-height: 120% !important
-      }
-
-      h2,
-      h2 a {
-        line-height: 120% !important
-      }
-
-      h3,
-      h3 a {
-        line-height: 120% !important
-      }
-
-      h4,
-      h4 a {
-        line-height: 120% !important
-      }
-
-      h5,
-      h5 a {
-        line-height: 120% !important
-      }
-
-      h6,
-      h6 a {
-        line-height: 120% !important
-      }
-
-      h1 {
-        font-size: 30px !important;
-        text-align: left
-      }
-
-      h2 {
-        font-size: 24px !important;
-        text-align: left
-      }
-
-      h3 {
-        font-size: 20px !important;
-        text-align: left
-      }
-
-      h4 {
-        font-size: 24px !important;
-        text-align: left
-      }
-
-      h5 {
-        font-size: 20px !important;
-        text-align: left
-      }
-
-      h6 {
-        font-size: 16px !important;
-        text-align: left
-      }
-
-      .es-header-body h1 a,
-      .es-content-body h1 a,
-      .es-footer-body h1 a {
-        font-size: 30px !important
-      }
-
-      .es-header-body h2 a,
-      .es-content-body h2 a,
-      .es-footer-body h2 a {
-        font-size: 24px !important
-      }
-
-      .es-header-body h3 a,
-      .es-content-body h3 a,
-      .es-footer-body h3 a {
-        font-size: 20px !important
-      }
-
-      .es-header-body h4 a,
-      .es-content-body h4 a,
-      .es-footer-body h4 a {
-        font-size: 24px !important
-      }
-
-      .es-header-body h5 a,
-      .es-content-body h5 a,
-      .es-footer-body h5 a {
-        font-size: 20px !important
-      }
-
-      .es-header-body h6 a,
-      .es-content-body h6 a,
-      .es-footer-body h6 a {
-        font-size: 16px !important
-      }
-
-      .es-menu td a {
-        font-size: 14px !important
-      }
-
-      .es-header-body p,
-      .es-header-body a {
-        font-size: 14px !important
-      }
-
-      .es-content-body p,
-      .es-content-body a {
-        font-size: 14px !important
-      }
-
-      .es-footer-body p,
-      .es-footer-body a {
-        font-size: 14px !important
-      }
-
-      .es-infoblock p,
-      .es-infoblock a {
-        font-size: 12px !important
-      }
-
-      .es-m-txt-c,
-      .es-m-txt-c h1,
-      .es-m-txt-c h2,
-      .es-m-txt-c h3,
-      .es-m-txt-c h4,
-      .es-m-txt-c h5,
-      .es-m-txt-c h6 {
-        text-align: center !important
-      }
-
-      .es-m-txt-r,
-      .es-m-txt-r h1,
-      .es-m-txt-r h2,
-      .es-m-txt-r h3,
-      .es-m-txt-r h4,
-      .es-m-txt-r h5,
-      .es-m-txt-r h6 {
-        text-align: right !important
-      }
-
-      .es-m-txt-j,
-      .es-m-txt-j h1,
-      .es-m-txt-j h2,
-      .es-m-txt-j h3,
-      .es-m-txt-j h4,
-      .es-m-txt-j h5,
-      .es-m-txt-j h6 {
-        text-align: justify !important
-      }
-
-      .es-m-txt-l,
-      .es-m-txt-l h1,
-      .es-m-txt-l h2,
-      .es-m-txt-l h3,
-      .es-m-txt-l h4,
-      .es-m-txt-l h5,
-      .es-m-txt-l h6 {
-        text-align: left !important
-      }
-
-      .es-m-txt-r img,
-      .es-m-txt-c img,
-      .es-m-txt-l img {
-        display: inline !important
-      }
-
-      .es-m-txt-r .rollover:hover .rollover-second,
-      .es-m-txt-c .rollover:hover .rollover-second,
-      .es-m-txt-l .rollover:hover .rollover-second {
-        display: inline !important
-      }
-
-      .es-m-txt-r .rollover div,
-      .es-m-txt-c .rollover div,
-      .es-m-txt-l .rollover div {
-        line-height: 0 !important;
-        font-size: 0 !important
-      }
-
-      .es-spacer {
-        display: inline-table
-      }
-
-      a.es-button,
-      button.es-button {
-        font-size: 18px !important
-      }
-
-      a.es-button,
-      button.es-button {
-        display: inline-block !important
-      }
-
-      .es-button-border {
-        display: inline-block !important
-      }
-
-      .es-m-fw,
-      .es-m-fw.es-fw,
-      .es-m-fw .es-button {
-        display: block !important
-      }
-
-      .es-m-il,
-      .es-m-il .es-button,
-      .es-social,
-      .es-social td,
-      .es-menu {
-        display: inline-block !important
-      }
-
-      .es-adaptive table,
-      .es-left,
-      .es-right {
-        width: 100% !important
-      }
-
-      .es-content table,
-      .es-header table,
-      .es-footer table,
-      .es-content,
-      .es-footer,
-      .es-header {
-        width: 100% !important;
-        max-width: 600px !important
-      }
-
-      .adapt-img {
-        width: 100% !important;
-        height: auto !important
-      }
-
-      .es-mobile-hidden,
-      .es-hidden {
-        display: none !important
-      }
-
-      .es-desk-hidden {
-        width: auto !important;
-        overflow: visible !important;
-        float: none !important;
-        max-height: inherit !important;
-        line-height: inherit !important
-      }
-
-      tr.es-desk-hidden {
-        display: table-row !important
-      }
-
-      table.es-desk-hidden {
-        display: table !important
-      }
-
-      td.es-desk-menu-hidden {
-        display: table-cell !important
-      }
-
-      .es-menu td {
-        width: 1% !important
-      }
-
-      table.es-table-not-adapt,
-      .esd-block-html table {
-        width: auto !important
-      }
-
-      .es-social td {
-        padding-bottom: 10px
-      }
-
-      .h-auto {
-        height: auto !important
-      }
-
-      a.es-button.es-button-3364 {
-        font-size: 14px !important
-      }
-
-      a.es-button.es-button-5057 {
-        font-size: 14px !important;
-        padding: 17px 20px 15px !important
-      }
-
-      a.es-button.es-button-6784 {
-        font-size: 14px !important;
-        padding: 17px 20px !important
-      }
-
-      .img-2869 {
-        width: 379px !important
-      }
-
-      td.es-spacer-2436 {
-        height: 19px !important
-      }
-
-      td.es-spacer-7890 {
-        height: 19px !important
-      }
-
-      td.es-spacer-7579 {
-        height: 19px !important
-      }
-
-      td.es-spacer-9685 {
-        height: 39px !important
-      }
-
-      td.es-spacer-6196 {
-        height: 39px !important
-      }
-
-      table.es-spacer-9022 {
-        width: 100% !important
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <title>Resume</title>
 </head>
 
-<body style="width:100%;height:100%;padding:0;Margin:0">
-  <div class="es-wrapper-color" style="background-color:transparent"><!--[if gte mso 9]>
-			<v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
-				<v:fill type="tile" color="transparent"></v:fill>
-			</v:background>
-		<![endif]-->
-    <table class="es-wrapper" width="100%" cellspacing="0" cellpadding="0"
-      style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;padding:0;Margin:0;width:100%;height:100%;background-repeat:repeat;background-position:center top;background-color:transparent">
-      <tr>
-        <td valign="top" style="padding:0;Margin:0">
-          <table class="es-header" cellspacing="0" cellpadding="0" align="center"
-            style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;width:100%;table-layout:fixed !important;background-color:transparent;background-repeat:repeat;background-position:center top">
-            <tr>
-              <td align="center" style="padding:0;Margin:0">
-                <table class="es-header-body" cellspacing="0" cellpadding="0" bgcolor="#ffffff" align="center"
-                  style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#FFFFFF;width:600px">
-                  <tr>
-                    <td align="left" bgcolor="#edeff0"
-                      style="padding:0;Margin:0;padding-right:50px;padding-left:50px;background-color:#edeff0">
-                      <table class="es-right" cellspacing="0" cellpadding="0" align="right"
-                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:right">
-                        <tr>
-                          <td class="es-m-p0r" valign="top" align="center" style="padding:0;Margin:0;width:500px">
-                            <table width="100%" cellspacing="0" cellpadding="0" role="presentation"
-                              style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                              <tr>
-                                <td align="center"
-                                  style="padding:0;Margin:0;padding-top:38px;padding-bottom:20px;font-size:0"><a
-                                    target="_blank" href="https://sigma.ru"
-                                    style="mso-line-height-rule:exactly;text-decoration:underline;color:#2CB543;font-size:14px"><img
-                                      class="adapt-img"
-                                      src="https://sagebq.stripocdn.email/content/guids/CABINET_cd083e7899df0d8e751c40e2a3e7ade70e60f7a9201eb6420123301bcbce0990/images/logo.png"
-                                      alt="" width="138"
-                                      style="display:block;font-size:14px;border:0;outline:none;text-decoration:none"></a>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
-          <table class="es-content" cellspacing="0" cellpadding="0" align="center"
-            style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;width:100%;table-layout:fixed !important">
-            <tr>
-              <td align="center" style="padding:0;Margin:0">
-                <table class="es-content-body" cellspacing="0" cellpadding="0" bgcolor="#ffffff" align="center"
-                  style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#FFFFFF;width:600px;border-width:0">
-                  <tr>
-                    <td class="es-m-p25l es-m-p25r" align="left" bgcolor="#edeff0"
-                      style="padding:0;Margin:0;padding-right:50px;padding-left:50px;padding-bottom:20px;background-color:#edeff0">
-                      <table width="100%" cellspacing="0" cellpadding="0"
-                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                        <tr>
-                          <td valign="top" align="center" style="padding:0;Margin:0;width:500px">
-                            <table width="100%" cellspacing="0" cellpadding="0" role="presentation"
-                              style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                              <tr>
-                                <td align="center" class="es-infoblock es-m-txt-c es-m-p5r es-m-p5l"
-                                  style="padding:0;Margin:0">
-                                  <h1
-                                    style="Margin:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;mso-line-height-rule:exactly;letter-spacing:0;font-size:28px !important;font-style:normal;font-weight:normal;line-height:34px;color:#333333">
-                                    <strong
-                                      style="font-family:Montserrat, times, 'times new roman', serif;line-height:150% !important;color:#000000">Обновите
-                                      SIGMA 10</strong>
-                                  </h1>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td align="center" class="es-infoblock" style="padding:0;Margin:0">
-                                  <p
-                                    style="Margin:0;mso-line-height-rule:exactly;font-family:Montserrat, times, 'times new roman', serif;line-height:36px !important;letter-spacing:0;color:#000000;font-size:24px !important">
-                                    перед продажей</p>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="es-m-p25r es-m-p25l" align="left"
-                      style="padding:0;Margin:0;padding-right:50px;padding-left:50px;border-radius:0;background-color:#edeff0"
-                      bgcolor="#edeff0">
-                      <table cellpadding="0" cellspacing="0" align="right" class="es-right"
-                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:separate;border-spacing:0px;float:right">
-                        <tr>
-                          <td align="left" style="padding:0;Margin:0;width:500px">
-                            <table cellpadding="0" cellspacing="0" width="100%" role="presentation"
-                              style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;border-radius:6px;background-color:#ffffff"
-                              bgcolor="#ffffff">
-                              <tr>
-                                <td align="center" class="es-infoblock" style="padding:0;Margin:0;font-size:0"><img
-                                    class="adapt-img"
-                                    src="https://sagebq.stripocdn.email/content/guids/CABINET_cd083e7899df0d8e751c40e2a3e7ade70e60f7a9201eb6420123301bcbce0990/images/heroimage.png"
-                                    alt="" width="500"
-                                    style="display:block;font-size:14px;border:0;outline:none;text-decoration:none">
-                                </td>
-                              </tr>
-                              <tr>
-                                <td align="left" class="es-infoblock es-m-p25l es-m-p25r" bgcolor="transparent"
-                                  style="Margin:0;padding-top:30px;padding-right:30px;padding-bottom:26px;padding-left:30px">
-                                  <p
-                                    style="Margin:0;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;letter-spacing:0;color:#333333;font-size:14px">
-                                    <span
-                                      style="font-family:verdana, geneva, sans-serif;background:transparent;line-height:20px !important;font-size:13px !important;color:#333333">В
-                                      2019 году новое законодательство требует обновления кассовой платформы. Теперь
-                                      смарт-терминалы SIGMA 10 работают на ДККТ10, учитывают НДС 20% и электронные
-                                      платежи вместо безналичных.</span>
-                                  </p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td align="left" class="es-infoblock es-m-p25r es-m-p25l" bgcolor="transparent"
-                                  height="63"
-                                  style="padding:0;Margin:0;padding-right:30px;padding-left:30px;padding-bottom:30px">
-                                  <p
-                                    style="Margin:0;mso-line-height-rule:exactly;font-family:verdana, geneva, sans-serif;line-height:21px;letter-spacing:0;color:#333333;font-size:14px">
-                                    <span style="line-height:20px !important;font-size:13px !important">Настройте
-                                      смарт-терминалы перед продажей, чтобы избежать негативных обращений клиентов.
-                                      Обновление прошивки бесплатное.</span><span
-                                      style="font-size:14px !important"></span><span
-                                      style="line-height:150% !important"></span>
-                                  </p>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="es-m-p25l es-m-p25r" align="left" bgcolor="#edeff0"
-                      style="Margin:0;padding-right:50px;padding-left:50px;padding-bottom:20px;padding-top:40px;background-color:#edeff0">
-                      <table cellpadding="0" cellspacing="0"
-                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                        <tr>
-                          <td align="left" style="padding:0;Margin:0;width:500px">
-                            <table cellpadding="0" cellspacing="0" width="100%" role="presentation"
-                              style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                              <tr>
-                                <td align="center" class="es-infoblock" style="padding:0;Margin:0">
-                                  <p
-                                    style="Margin:0;mso-line-height-rule:exactly;font-family:Montserrat, times, 'times new roman', serif;line-height:27px;letter-spacing:0;color:#333333;font-size:18px !important">
-                                    <strong style="line-height:180% !important"><span style="color:#2c2c2c">Как
-                                        подготовить </span><span style="color:#ed1b2f">SIGMA 10</span></strong>
-                                  </p>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="es-m-p25l es-m-p25r" align="left"
-                      style="padding:0;Margin:0;padding-right:50px;padding-left:50px;padding-bottom:20px;border-radius:0;background-color:#EDEFF0"
-                      bgcolor="#EDEFF0">
-                      <table cellpadding="0" cellspacing="0" class="esdev-mso-table"
-                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:separate;border-spacing:0px;width:500px">
-                        <tr>
-                          <td class="esdev-mso-td" valign="top" style="padding:0;Margin:0">
-                            <table cellpadding="0" cellspacing="0" class="es-left" align="left"
-                              style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:separate;border-spacing:0px;float:left">
-                              <tr>
-                                <td align="left" style="padding:0;Margin:0;width:41px">
-                                  <table cellpadding="0" cellspacing="0" width="100%" role="presentation"
-                                    bgcolor="#ffffff"
-                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:separate;border-spacing:0px;background-color:#ffffff;border-style:solid;border-width:0 0 3px 1px;border-color:#808080 #808080 #cccccc #cccccc;border-radius:6px 0 0 6px">
-                                    <tr>
-                                      <td align="center" style="padding:0;Margin:0;font-size:0" height="35"></td>
-                                    </tr>
-                                    <tr>
-                                      <td align="center" class="es-infoblock es-m-txt-c" height="60" valign="top"
-                                        style="padding:0;Margin:0;padding-left:15px">
-                                        <p
-                                          style="Margin:0;mso-line-height-rule:exactly;font-family:verdana, geneva, sans-serif;line-height:20px !important;letter-spacing:0;color:#333333;font-size:13px !important">
-                                          <strong style="color:#ed1b2f">1</strong>
-                                        </p>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td align="center" class="es-infoblock es-m-txt-c es-m-p10t" height="35"
-                                        valign="top" style="padding:0;Margin:0;padding-left:15px">
-                                        <p
-                                          style="Margin:0;mso-line-height-rule:exactly;font-family:verdana, geneva, sans-serif;line-height:20px !important;letter-spacing:0;color:#333333;font-size:13px !important">
-                                          <strong style="color:#ed1b2f">2</strong>
-                                        </p>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td align="center" class="es-infoblock" height="85" valign="top"
-                                        style="padding:0;Margin:0;padding-left:15px">
-                                        <p
-                                          style="Margin:0;mso-line-height-rule:exactly;font-family:verdana, geneva, sans-serif;line-height:20px !important;letter-spacing:0;color:#333333;font-size:13px !important">
-                                          <strong style="color:#ed1b2f">3</strong>
-                                        </p>
-                                      </td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                          <td class="esdev-mso-td" valign="top" style="padding:0;Margin:0">
-                            <table cellpadding="0" cellspacing="0" class="es-right" align="right"
-                              style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:separate;border-spacing:0px;float:right">
-                              <tr>
-                                <td align="left" style="padding:0;Margin:0;width:459px">
-                                  <table cellpadding="0" cellspacing="0" width="100%" role="presentation"
-                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:separate;border-spacing:0px;border-radius:0 6px 6px 0;background-color:#ffffff;border-width:0 1px 3px 0;border-style:solid;border-color:#808080 #cccccc #cccccc #808080"
-                                    bgcolor="#ffffff">
-                                    <tr>
-                                      <td align="center" style="padding:0;Margin:0;font-size:0" height="35"></td>
-                                    </tr>
-                                    <tr>
-                                      <td align="left" class="es-infoblock es-m-p10r" height="60" valign="top"
-                                        style="padding:0;Margin:0;padding-right:30px;padding-left:5px">
-                                        <p
-                                          style="Margin:0;mso-line-height-rule:exactly;font-family:verdana, geneva, sans-serif;line-height:20px !important;letter-spacing:0;color:#333333;font-size:13px !important">
-                                          Обновите прошивку, чтобы работать с НДС 20% и электронными платежами</p>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td align="left" class="es-infoblock es-m-p10r es-m-p10t" height="35" valign="top"
-                                        style="padding:0;Margin:0;padding-right:30px;padding-left:5px">
-                                        <p
-                                          style="Margin:0;mso-line-height-rule:exactly;font-family:verdana, geneva, sans-serif;line-height:20px !important;letter-spacing:0;color:#333333;font-size:13px !important">
-                                          Обновите приложение SIGMA</p>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td align="left" class="es-infoblock es-m-p10r" height="85" valign="top"
-                                        style="padding:0;Margin:0;padding-right:30px;padding-left:5px">
-                                        <p
-                                          style="Margin:0;mso-line-height-rule:exactly;font-family:verdana, geneva, sans-serif;line-height:20px !important;letter-spacing:0;color:#333333;font-size:13px !important">
-                                          ДККТ10 установится на терминал автоматически вместе с кассовой программой</p>
-                                      </td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="es-m-p25l es-m-p25r" align="left" bgcolor="#edeff0"
-                      style="padding:0;Margin:0;padding-right:50px;padding-left:50px;padding-top:20px;background-color:#edeff0">
-                      <table cellpadding="0" cellspacing="0"
-                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                        <tr>
-                          <td class="es-m-p0r es-m-p0l" align="left"
-                            style="padding:0;Margin:0;padding-right:30px;padding-left:30px;padding-bottom:30px;width:500px">
-                            <table cellpadding="0" cellspacing="0" width="100%" role="presentation"
-                              style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                              <tr>
-                                <td align="center" class="es-infoblock es-m-p20b"
-                                  style="padding:0;Margin:0;padding-bottom:25px">
-                                  <p
-                                    style="Margin:0;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:27px;letter-spacing:0;color:#333333;font-size:18px !important">
-                                    <strong
-                                      style="line-height:180% !important;font-family:Montserrat, times, 'times new roman', serif"><span
-                                        style="color:#2C2C2C">Инструкция и ссылка</span> <span style="color:#ed1b2f">на
-                                        обновление</span></strong>
-                                  </p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td align="center" class="es-infoblock" style="padding:0;Margin:0">
-                                  <p
-                                    style="Margin:0;mso-line-height-rule:exactly;font-family:verdana, geneva, sans-serif;line-height:20px !important;letter-spacing:0;color:#333333;font-size:13px !important">
-                                    Информация о предпродажной подготовке SIGMA собрана в нашей базе знаний в закрытому
-                                    партнерском разделе.</p>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="es-m-p25l es-m-p25r es-m-p35b" align="left" bgcolor="#edeff0"
-                      style="padding:0;Margin:0;padding-right:50px;padding-left:50px;padding-bottom:45px;background-color:#edeff0">
-                      <!--[if mso]><table style="width:500px" cellpadding="0" cellspacing="0"><tr><td style="width:241px" valign="top"><![endif]-->
-                      <table cellpadding="0" cellspacing="0" class="es-left" align="left"
-                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:separate;border-spacing:0px;float:left">
-                        <tr>
-                          <td class="es-m-p25b" align="left" style="padding:0;Margin:0;width:241px">
-                            <table cellpadding="0" cellspacing="0" width="100%" role="presentation" bgcolor="#ffffff"
-                              style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#ffffff;border-radius:6px">
-                              <tr>
-                                <td align="center" class="es-infoblock" style="padding:0;Margin:0;font-size:0"><img
-                                    class="adapt-img"
-                                    src="https://sagebq.stripocdn.email/content/guids/CABINET_cd083e7899df0d8e751c40e2a3e7ade70e60f7a9201eb6420123301bcbce0990/images/main_1.png"
-                                    alt="" width="241"
-                                    style="display:block;font-size:14px;border:0;outline:none;text-decoration:none">
-                                </td>
-                              </tr>
-                              <tr>
-                                <td align="left" class="es-infoblock"
-                                  style="Margin:0;padding-top:30px;padding-right:25px;padding-bottom:15px;padding-left:25px">
-                                  <p
-                                    style="Margin:0;mso-line-height-rule:exactly;font-family:verdana, geneva, sans-serif;line-height:21px;letter-spacing:0;color:#000;font-size:14px">
-                                    <strong>Если у вас есть доступ к базе знаний</strong>
-                                  </p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td align="left" class="es-infoblock"
-                                  style="padding:0;Margin:0;padding-left:25px;padding-right:20px;padding-bottom:38px">
-                                  <p
-                                    style="Margin:0;mso-line-height-rule:exactly;font-family:verdana, geneva, sans-serif;line-height:18px !important;letter-spacing:0;color:#8d8d8d;font-size:12px !important">
-                                    Читайте полную инструкцию по обновлению</p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td align="center" class="es-infoblock es-m-p25b es-m-p0l es-m-p0r"
-                                  style="padding:0;Margin:0;padding-right:25px;padding-left:25px;padding-bottom:35px">
-                                  <span class="es-button-border es-fw"
-                                    style="border-style:solid;border-color:#2CB543;background:#ed1b2f;border-width:0;display:block;border-radius:6px;width:auto;box-shadow:0px 1px 2px 0px #F9F6F4, 0px 3px 4px 0px #FBF6F3, 0px 4px 8px 0px #FF9B9B"><a
-                                      href="https://sigma.ru" class="es-button es-button-5057" target="_blank"
-                                      style="mso-style-priority:100 !important;text-decoration:none !important;mso-line-height-rule:exactly;color:#FFFFFF;font-size:13px;padding:17px 10px 17px;display:block;background:#ed1b2f;border-radius:6px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;font-weight:bold;font-style:normal;line-height:16px !important;width:auto;text-align:center;letter-spacing:1.04px;mso-padding-alt:0;mso-border-alt:10px solid #ed1b2f">ПЕРЕЙТИ</a></span>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
-                      <!--[if mso]></td><td style="width:18px"></td><td style="width:241px" valign="top"><![endif]-->
-                      <table cellpadding="0" cellspacing="0" class="es-right" align="right"
-                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:separate;border-spacing:0px;float:right">
-                        <tr>
-                          <td align="left" style="padding:0;Margin:0;width:241px">
-                            <table cellpadding="0" cellspacing="0" width="100%" role="presentation" bgcolor="#ffffff"
-                              style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#ffffff;border-radius:6px">
-                              <tr>
-                                <td align="center" class="es-infoblock" style="padding:0;Margin:0;font-size:0"><img
-                                    class="adapt-img"
-                                    src="https://sagebq.stripocdn.email/content/guids/CABINET_cd083e7899df0d8e751c40e2a3e7ade70e60f7a9201eb6420123301bcbce0990/images/main_2_KNx.png"
-                                    alt="" width="241"
-                                    style="display:block;font-size:14px;border:0;outline:none;text-decoration:none">
-                                </td>
-                              </tr>
-                              <tr>
-                                <td align="left" class="es-infoblock"
-                                  style="Margin:0;padding-top:30px;padding-right:25px;padding-bottom:15px;padding-left:25px">
-                                  <p
-                                    style="Margin:0;mso-line-height-rule:exactly;font-family:verdana, geneva, sans-serif;line-height:21px;letter-spacing:0;color:#000000;font-size:14px">
-                                    <strong>Получите доступ<br>к базе знаний</strong>
-                                  </p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td align="left" class="es-infoblock"
-                                  style="padding:0;Margin:0;padding-bottom:20px;padding-left:25px;padding-right:20px">
-                                  <p
-                                    style="Margin:0;mso-line-height-rule:exactly;font-family:verdana, geneva, sans-serif;line-height:18px !important;letter-spacing:0;color:#8d8d8d;font-size:12px !important">
-                                    1. Зарегистрируйтесь на support.sigma.ru</p>
-                                  <p
-                                    style="Margin:0;mso-line-height-rule:exactly;font-family:verdana, geneva, sans-serif;line-height:18px !important;letter-spacing:0;color:#8d8d8d;font-size:12px !important">
-                                    2. Отправьте запрос на доступ</p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td align="center" class="es-infoblock es-m-p25b es-m-p0l es-m-p0r"
-                                  style="padding:0;Margin:0;padding-right:25px;padding-left:25px;padding-bottom:35px">
-                                  <span class="es-button-border"
-                                    style="border-style:solid;border-color:#2CB543;background:#ed1b2f;border-width:0;display:inline-block;border-radius:6px;width:auto;box-shadow:0px 1px 2px 0px #F9F6F4, 0px 3px 4px 0px #FBF6F3, 0px 4px 8px 0px #FF9B9B"><a
-                                      href="https://sigma.ru" class="es-button es-button-6784" target="_blank"
-                                      style="mso-style-priority:100 !important;text-decoration:none !important;mso-line-height-rule:exactly;color:#FFFFFF;font-size:13px;padding:17px 10px;display:inline-block;background:#ed1b2f;border-radius:6px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;font-weight:bold;font-style:normal;line-height:16px !important;width:auto;text-align:center;letter-spacing:1.04px;mso-padding-alt:0;mso-border-alt:10px solid #ed1b2f">ЗАРЕГИСТИРОВАТЬСЯ</a></span>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table><!--[if mso]></td></tr></table><![endif]-->
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="es-m-p25r es-m-p25l" align="left"
-                      style="padding:0;Margin:0;padding-right:50px;padding-left:50px;border-radius:0;background-color:#edeff0"
-                      bgcolor="#edeff0">
-                      <table cellpadding="0" cellspacing="0" align="right" class="es-right"
-                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:separate;border-spacing:0px;float:right">
-                        <tr>
-                          <td align="left" style="padding:0;Margin:0;width:500px">
-                            <table cellpadding="0" cellspacing="0" width="100%" role="presentation"
-                              style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;border-radius:6px;background-color:#ffffff"
-                              bgcolor="#ffffff">
-                              <tr>
-                                <td align="center" style="padding:0;Margin:0;font-size:0"><img class="adapt-img"
-                                    src="https://sagebq.stripocdn.email/content/guids/CABINET_cd083e7899df0d8e751c40e2a3e7ade70e60f7a9201eb6420123301bcbce0990/images/tgimage.png"
-                                    alt="" width="500"
-                                    style="display:block;font-size:14px;border:0;outline:none;text-decoration:none">
-                                </td>
-                              </tr>
-                              <tr>
-                                <td align="left" class="es-infoblock es-m-p25l es-m-p25r" bgcolor="transparent"
-                                  style="Margin:0;padding-right:30px;padding-left:30px;padding-bottom:15px;padding-top:25px">
-                                  <p
-                                    style="Margin:0;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;letter-spacing:0;color:#333333;font-size:14px">
-                                    <strong style="font-size:16px !important"><span
-                                        style="font-family:verdana, geneva, sans-serif;background:transparent;line-height:150% !important;color:#000000">Телеграм-канал
-                                        АТОЛ и SIGMA Партнёрам</span></strong>
-                                  </p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td align="left" class="es-infoblock es-m-p25r es-m-p25l" bgcolor="transparent"
-                                  height="63"
-                                  style="padding:0;Margin:0;padding-right:50px;padding-left:30px;padding-bottom:25px">
-                                  <p
-                                    style="Margin:0;mso-line-height-rule:exactly;font-family:verdana, geneva, sans-serif;line-height:21px;letter-spacing:0;color:#333333;font-size:14px">
-                                    <span style="line-height:20px !important;font-size:13px !important">Подписывайтесь и
-                                      приглашайте своих коллег: руководителей, менеджеров по продажам и
-                                      маркетологов!</span><span style="font-size:14px !important"></span><span
-                                      style="line-height:150% !important"></span>
-                                  </p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td align="left" class="es-m-txt-c es-m-p0l"
-                                  style="padding:0;Margin:0;padding-left:30px;padding-bottom:35px"><span
-                                    class="es-button-border"
-                                    style="border-style:solid;border-color:#2CB543;background:#ed1b2f;border-width:0;display:inline-block;border-radius:6px;width:auto;box-shadow:0px 1px 2px 0px #F9F6F4, 0px 3px 4px 0px #FBF6F3, 0px 4px 8px 0px #FF9B9B"><a
-                                      href="https://t.me/atolnews" class="es-button es-button-3364" target="_blank"
-                                      style="mso-style-priority:100 !important;text-decoration:none !important;mso-line-height-rule:exactly;color:#FFFFFF;font-size:13px;padding:17px 30px;display:inline-block;background:#ed1b2f;border-radius:6px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;font-weight:bold;font-style:normal;line-height:16px !important;width:auto;text-align:center;letter-spacing:1.04px;mso-padding-alt:0;mso-border-alt:10px solid #ed1b2f">ПРИСОЕДИНИТЬСЯ</a></span>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="es-m-p35t es-m-p25r es-m-p25l" align="left" bgcolor="#edeff0"
-                      style="padding:0;Margin:0;padding-right:30px;padding-left:30px;padding-top:45px;background-color:#edeff0;border-radius:0">
-                      <table cellpadding="0" cellspacing="0"
-                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                        <tr>
-                          <td align="left" style="padding:0;Margin:0;width:540px">
-                            <table cellpadding="0" cellspacing="0" width="100%" role="presentation"
-                              style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                              <tr>
-                                <td align="center" class="es-infoblock" style="padding:0;Margin:0">
-                                  <p
-                                    style="Margin:0;mso-line-height-rule:exactly;font-family:verdana, geneva, sans-serif;line-height:27px !important;letter-spacing:0;color:#898989;font-size:18px !important">
-                                    Твой бизнес может больше!</p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td align="center" style="padding:0;Margin:0;padding-top:30px;font-size:0">
-                                  <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0"
-                                    class="es-spacer" role="presentation"
-                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                                    <tr>
-                                      <td
-                                        style="padding:0;Margin:0;border-bottom:1px solid #c4c4c4;background:none;height:1px;width:100%;margin:0px">
-                                      </td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
-          <table class="es-footer" cellspacing="0" cellpadding="0" align="center"
-            style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;width:100%;table-layout:fixed !important;background-color:transparent;background-repeat:repeat;background-position:center top">
-            <tr>
-              <td align="center" style="padding:0;Margin:0">
-                <table class="es-footer-body" cellspacing="0" cellpadding="0" bgcolor="#ffffff" align="center"
-                  style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#FFFFFF;width:600px">
-                  <tr>
-                    <td class="es-m-p10b" align="left" bgcolor="#edeff0"
-                      style="padding:0;Margin:0;padding-right:50px;padding-left:50px;padding-bottom:20px;background-color:#edeff0">
-                      <!--[if mso]><table style="width:500px" cellpadding="0" cellspacing="0"><tr><td style="width:240px" valign="top"><![endif]-->
-                      <table class="es-left" cellspacing="0" cellpadding="0" align="left"
-                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left">
-                        <tr>
-                          <td class="es-m-p20b" align="left" style="padding:0;Margin:0;width:240px">
-                            <table width="100%" cellspacing="0" cellpadding="0" role="presentation"
-                              style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                              <tr>
-                                <td align="left" style="padding:0;Margin:0;padding-top:30px;font-size:0"><a
-                                    target="_blank" href="https://atol.ru"
-                                    style="mso-line-height-rule:exactly;text-decoration:underline;color:#FFFFFF;font-size:14px"><img
-                                      class="adapt-img"
-                                      src="https://sagebq.stripocdn.email/content/guids/CABINET_cd083e7899df0d8e751c40e2a3e7ade70e60f7a9201eb6420123301bcbce0990/images/atol.png"
-                                      alt="" width="102"
-                                      style="display:block;font-size:14px;border:0;outline:none;text-decoration:none"></a>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
-                      <!--[if mso]></td><td style="width:20px"></td><td style="width:240px" valign="top"><![endif]-->
-                      <table class="es-right" cellspacing="0" cellpadding="0" align="right"
-                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:right">
-                        <tr>
-                          <td class="es-m-p10t" align="left" style="padding:0;Margin:0;padding-top:30px;width:240px">
-                            <table cellpadding="0" cellspacing="0" width="100%" role="presentation"
-                              style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                              <tr>
-                                <td align="right" class="es-m-txt-c" style="padding:0;Margin:0;font-size:0">
-                                  <table cellpadding="0" cellspacing="0" class="es-table-not-adapt es-social"
-                                    role="presentation"
-                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                                    <tr>
-                                      <td align="center" valign="top" style="padding:0;Margin:0;padding-right:10px"><a
-                                          target="_blank" href="https://t.me/atolnews"
-                                          style="mso-line-height-rule:exactly;text-decoration:underline;color:#FFFFFF;font-size:14px"><img
-                                            title="Telegram"
-                                            src="https://sagebq.stripocdn.email/content/guids/CABINET_cd083e7899df0d8e751c40e2a3e7ade70e60f7a9201eb6420123301bcbce0990/images/tg.png"
-                                            alt="Telegram" width="26"
-                                            style="display:block;font-size:14px;border:0;outline:none;text-decoration:none"></a>
-                                      </td>
-                                      <td align="center" valign="top" style="padding:0;Margin:0;padding-right:10px"><a
-                                          target="_blank" href="https://vk.com/aboutatol"
-                                          style="mso-line-height-rule:exactly;text-decoration:underline;color:#FFFFFF;font-size:14px"><img
-                                            title="Собственная иконка"
-                                            src="https://sagebq.stripocdn.email/content/guids/CABINET_cd083e7899df0d8e751c40e2a3e7ade70e60f7a9201eb6420123301bcbce0990/images/vk.png"
-                                            alt="Собственная иконка" width="26"
-                                            style="display:block;font-size:14px;border:0;outline:none;text-decoration:none"></a>
-                                      </td>
-                                      <td align="center" valign="top" style="padding:0;Margin:0;padding-right:10px"><a
-                                          target="_blank" href="https://facebook.com"
-                                          style="mso-line-height-rule:exactly;text-decoration:underline;color:#FFFFFF;font-size:14px"><img
-                                            title="Facebook"
-                                            src="https://sagebq.stripocdn.email/content/guids/CABINET_cd083e7899df0d8e751c40e2a3e7ade70e60f7a9201eb6420123301bcbce0990/images/fb.png"
-                                            alt="Fb" width="26"
-                                            style="display:block;font-size:14px;border:0;outline:none;text-decoration:none"></a>
-                                      </td>
-                                      <td align="center" valign="top" style="padding:0;Margin:0"><a target="_blank"
-                                          href="https://www.youtube.com/@ATOL_SIGMA"
-                                          style="mso-line-height-rule:exactly;text-decoration:underline;color:#FFFFFF;font-size:14px"><img
-                                            title="Youtube"
-                                            src="https://sagebq.stripocdn.email/content/guids/CABINET_cd083e7899df0d8e751c40e2a3e7ade70e60f7a9201eb6420123301bcbce0990/images/yt.png"
-                                            alt="Yt" width="26"
-                                            style="display:block;font-size:14px;border:0;outline:none;text-decoration:none"></a>
-                                      </td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table><!--[if mso]></td></tr></table><![endif]-->
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="es-m-p10b es-m-p25l es-m-p25r" align="left" bgcolor="#edeff0"
-                      style="padding:0;Margin:0;padding-right:50px;padding-left:50px;padding-bottom:15px;background-color:#edeff0">
-                      <table cellpadding="0" cellspacing="0"
-                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                        <tr>
-                          <td align="left" style="padding:0;Margin:0;width:500px">
-                            <table cellpadding="0" cellspacing="0" width="100%" role="presentation"
-                              style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                              <tr>
-                                <td align="left" class="es-m-txt-c" style="padding:0;Margin:0">
-                                  <p
-                                    style="Margin:0;mso-line-height-rule:exactly;font-family:helvetica, 'helvetica neue', arial, verdana, sans-serif;line-height:21px;letter-spacing:0;color:#898989;font-size:14px">
-                                    2023 ©</p>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="es-m-p25l es-m-p25r" align="left" bgcolor="#edeff0"
-                      style="padding:0;Margin:0;padding-right:50px;padding-left:50px;padding-bottom:20px;background-color:#edeff0">
-                      <!--[if mso]><table style="width:500px" cellpadding="0" cellspacing="0"><tr><td style="width:300px" valign="top"><![endif]-->
-                      <table cellpadding="0" cellspacing="0" class="es-left" align="left"
-                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left">
-                        <tr>
-                          <td class="es-m-p15b" align="left" style="padding:0;Margin:0;width:300px">
-                            <table cellpadding="0" cellspacing="0" width="100%" role="presentation"
-                              style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                              <tr>
-                                <td align="left" class="es-m-txt-c" style="padding:0;Margin:0">
-                                  <p
-                                    style="Margin:0;mso-line-height-rule:exactly;font-family:helvetica, 'helvetica neue', arial, verdana, sans-serif;line-height:21px;letter-spacing:0;color:#898989;font-size:14px">
-                                    Москва, ул. Большая Новодмитровская,</p>
-                                  <p
-                                    style="Margin:0;mso-line-height-rule:exactly;font-family:helvetica, 'helvetica neue', arial, verdana, sans-serif;line-height:21px;letter-spacing:0;color:#898989;font-size:14px">
-                                    д. 14, стр. 2, этаж 4.</p>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
-                      <!--[if mso]></td><td style="width:20px"></td><td style="width:180px" valign="top"><![endif]-->
-                      <table cellpadding="0" cellspacing="0" class="es-right" align="right"
-                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:right">
-                        <tr>
-                          <td align="left" style="padding:0;Margin:0;width:180px">
-                            <table cellpadding="0" cellspacing="0" width="100%" role="presentation"
-                              style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                              <tr>
-                                <td align="left" class="es-m-p0l es-m-txt-c"
-                                  style="padding:0;Margin:0;padding-left:45px">
-                                  <p
-                                    style="Margin:0;mso-line-height-rule:exactly;font-family:helvetica, 'helvetica neue', arial, verdana, sans-serif;line-height:21px;letter-spacing:0;color:#898989;font-size:14px">
-                                    +7 (495) 646 77 78</p>
-                                  <p
-                                    style="Margin:0;mso-line-height-rule:exactly;font-family:helvetica, 'helvetica neue', arial, verdana, sans-serif;line-height:21px;letter-spacing:0;color:#898989;font-size:14px">
-                                    info@atol.ru</p>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table><!--[if mso]></td></tr></table><![endif]-->
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="es-m-p25l es-m-p25r" align="left" bgcolor="#edeff0"
-                      style="padding:0;Margin:0;padding-right:50px;padding-left:50px;padding-bottom:35px;background-color:#edeff0">
-                      <table cellpadding="0" cellspacing="0"
-                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                        <tr>
-                          <td align="left" style="padding:0;Margin:0;width:500px">
-                            <table cellpadding="0" cellspacing="0" width="100%" role="presentation"
-                              style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                              <tr>
-                                <td align="left" style="padding:0;Margin:0">
-                                  <p
-                                    style="Margin:0;mso-line-height-rule:exactly;font-family:helvetica, 'helvetica neue', arial, verdana, sans-serif;line-height:20px !important;letter-spacing:0;color:#b4b4b4;font-size:13px !important">
-                                    Вы получили это письмо, так как оставляли ваш email на сайте или менеджеру компании
-                                    АТОЛ. Если эти письма не интересны – вы можете <a href="https://www.google.ru"
-                                      style="mso-line-height-rule:exactly;text-decoration:underline;color:#b4b4b4;font-size:14px;line-height:21px !important">отписаться</a>.
-                                  </p>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-  </div>
+<body>
+    <!-- Main -->
+    <div class="main">
+        <!-- main content (right) -->
+        <div class="main-content">
+            <!-- about user -->
+            <div class="about-user">
+                <h4 class="about-user-job">
+                    HTML-верстальщик / Frontend-разработчик (Junior)
+                </h4>
+                <h1 class="about-user-name">
+                    Олейник Денис Владиславович
+                </h1>
+                <h3 class="main-content-title">
+                    Кратко обо мне:
+                </h3>
+                <p class="about-user-text">
+                    После школы стоял перед выбором - IT или строительство. Почему-то думал что в строительстве меньше
+                    математики (привет сопромат), плюс отец в строительной сфере, поэтому выбрал строительство.</p>
+                <p class="about-user-text">
+                    C 2014 по 2021 г. работал инженером-проектировщиком наружных тепловых сетей, стал руководителем
+                    отдела, потом - главным инженером проекта (ГИП), по ИТ-иерархии - тимлид. Все самые сложные,
+                    требующие терпения и внимательности задачи
+                    поручали именно мне.</p>
+                <p class="about-user-text">Достиг потолка по прибыли и развитию в этом направлении, стало скучно и не
+                    интересно. Поэтому, решил исправить свою ошибку молодости и вот уже больше года я обучаюсь на
+                    IT-специалиста.</p>
+                <p class="about-user-text">IT - это действительно то что мне нужно, это то что меня увлекает и где я
+                    себя вижу. Жалею только об одном - что не сделал этого раньше.</p>
+            </div>
+            <!-- projects -->
+            <!-- <div class="projects">
+                <h3 class="main-content-title">Учебные проекты</h3>
+                <ol class="projects-list">
+                    <li><span class="projects-text"><a href="https://olden90.github.io/my_first_website" target="_blank"
+                                class="projects-link">Мой первый учебный сайт на HTML5, CSS3</a></span>
+                        <br>
+                        <span class="projects-text"><a href="https://github.com/OlDen90/my_first_website"
+                                target="_blank" class="projects-link">Исходный код на GitHub</a></span>
+                    </li>
+                    <li><span class="projects-text"><a href="https://github.com/OlDen90/MySQL" target="_blank"
+                                class="projects-link">Курсовая по
+                                MySQL</a></span>
+                    </li>
+                    <li><span class="projects-text"><a href="https://olden90.github.io/flexbox_and_scss/"
+                                target="_blank" class="projects-link">Отработка flexbox и scss</a></span>
+                        <br>
+                        <span class="projects-text"><a href="https://github.com/OlDen90/flexbox_and_scss"
+                                target="_blank" class="projects-link">Исходный код flexbox и scss на GitHub</a></span>
+                    </li>
+                    <li><span class="projects-text"><a href="https://olden90.github.io/GRID/" target="_blank"
+                                class="projects-link">Отработка GRIDов</a></span>
+                        <br>
+                        <span class="projects-text"><a href="https://github.com/OlDen90/GRID" target="_blank"
+                                class="projects-link">Исходный код отработки GRIDов на GitHub</a></span>
+                    </li>
+                </ol>
+            </div> -->
+
+            <div class="projects">
+                <h3 class="main-content-title">Самостоятельные проекты для отработки полученных знаний</h3>
+                <ol class="projects-list">
+                    <li><span class="projects-text"><a href="https://github.com/OlDen90/about_myself" target="_blank"
+                                class="projects-link">Этот сайт на GitHub (исходный код)</a>
+                        </span></li>
+
+                    <li><span class="projects-text"><a href="https://olden90.github.io/construction" target="_blank"
+                                class="projects-link">Заготовка строительного сайта (осталось наполнить
+                                текстом)</a></span>
+                        <br>
+                        <span class="projects-text"><a href="https://github.com/OlDen90/construction" target="_blank"
+                                class="projects-link">Исходный код заготовки строительного сайта на GitHub</a></span>
+                    </li>
+
+                    <li><span class="projects-text"><a href="https://olden90.github.io/travelling" target="_blank"
+                                class="projects-link">Сайт о моих путешествиях (постепенно наполняю
+                                информацией)</a></span>
+                        <br>
+                        <span class="projects-text"><a href="https://github.com/OlDen90/travelling" target="_blank"
+                                class="projects-link">Исходный код сайта о моих путешествиях на GitHub</a></span>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="projects">
+                <h3 class="main-content-title">Тестовые задания</h3>
+                <ol class="projects-list">
+                    <li><span class="projects-text"><a href="https://olden90.github.io/space_shop" target="_blank"
+                                class="projects-link">Страничка магазина космических игрушек (pixel perfect)</a></span>
+                        <br>
+                        <span class="projects-text"><a href="https://github.com/OlDen90/space_shop_mob_version"
+                                target="_blank" class="projects-link">Исходный код на GitHub</a></span>
+                    </li>
+                    <li><span class="projects-text"><a href="https://olden90.github.io/sports_shop_full/"
+                                target="_blank" class="projects-link">Страничка интернет-магазина с автоматическим и
+                                ручным
+                                переключением день/ночь, кнопкой "на верх", формой заказа, popup для формы заказа и
+                                картинок, плавными переходами и эффектами, а также полноэкранной заглавной
+                                картинкой</a></span>
+                        <br>
+                        <span class="projects-text"><a href="https://github.com/OlDen90/sports_shop_full"
+                                target="_blank" class="projects-link">Исходный код на GitHub</a></span>
+                        <br>
+                        <span class="projects-text"><a href="https://github.com/OlDen90/sports_shop" target="_blank"
+                                class="projects-link">Исходный код на GitHub упрощенной версии, согласно
+                                задания</a></span>
+                    </li>
+                    <li><span class="projects-text"><a href="https://olden90.github.io/sigma" target="_blank"
+                                class="projects-link">html письмо написанное в конструкторе Stripo и дополненное
+                                вручную</a></span>
+                        <br>
+                        <span class="projects-text"><a href="https://github.com/OlDen90/sigma" target="_blank"
+                                class="projects-link">Исходный код на GitHub</a></span>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="projects">
+                <h3 class="main-content-title">Дополнительно</h3>
+                <ol class="projects-list">
+                    <li><span class="projects-text">Настраиваю Битрикс24</span></li>
+                </ol>
+            </div>
+
+            <!-- experience -->
+            <div class="experience">
+                <h3 class="main-content-title">Чего я уже достиг в IT-направлении:</h3>
+                <!-- <p class="about-user-text">Чего я уже достиг в IT-направлении:</p> -->
+                <p class="about-user-text thick-text">Курсы:</p>
+                <ul class="experience-list">
+                    <li>Прошел "Поколение Python": курс для начинающих" и частично (выборочно, интересующие меня темы)
+                        "Поколение Python": курс для продвинутых" на сайте stepik.org</li>
+                    <li>В ознакомительных целях частично прошел курс "Введение в Linux" на сайте stepik.org</li>
+                    <li>Обучался на сайте GeekBrains, на факультете "Программист Python",
+                        где прошел курсы:</li>
+                    <ul class="experience-list">
+                        <li>Основы языка <strong>Python</strong></li>
+                        <li><strong>Git</strong>. Базовый курс</li>
+                        <li><strong>Алгоритмы и структуры</strong> данных на Python.</li>
+                        <li>Основы реляционных баз данных. <strong>MySQL</strong>.</li>
+                        <li>HTML/CSS.</li>
+                        <li>Базовый курс JavaScript.</li>
+                    </ul>
+                </ul>
+                <p class="about-user-text thick-text">Самостоятельное обучение:</p>
+                <ul class="experience-list">
+                    <li>Уроки по <strong>jQuery</strong> - ITDoctor (YouTube). <u>Применял в своих учебных работах</u>.
+                    </li>
+                    <li>Курс по верстке сайтов (Front End) - Фрилансер по жизни (YouTube), где изучил:</li>
+                    <ul class="experience-list">
+                        <li><strong>HTML/CSS</strong> (работаю и с flex, и с grid)</li>
+                        <li><strong>SASS/SCSS</strong></li>
+                        <li><strong>JavaScript</strong></li>
+                        <li><strong>адаптивная и кросбраузерная вёрстка</strong></li>
+                        <li>верстка по макетам <strong>Figma, Marsy</strong></li>
+                    </ul>
+                    <li><strong>Vue.js 2</strong> и не только. Изучал в рамках предстажировочного обучения. По семейным
+                        обстоятельствам
+                        приостановил
+                        обучение. Вот что успел изучить на данный момент:</li>
+                    <ul class="experience-list">
+                        <li><strong>Webpack</strong> - выполнял ознакомительную настройку и сборку перед дальнейшим
+                            изучением Vue.js 2</li>
+                        <li><strong>Node.js</strong> - работал в рамках изучения webpack и Vue.js</li>
+                        <li>По самому <strong>Vue.js:</strong></li>
+                        <ul>
+                            <li>Клиент-серверное общение</li>
+                            <li>FetchAPI</li>
+                            <li>Axios</li>
+                            <li>Async/await/Promise</li>
+                            <li>Директивы</li>
+                            <li>Вычисляемые свойства</li>
+                            <li>Работа с классами и стилями</li>
+                            <li>Обработка событий</li>
+                            <li>Компоненты</li>
+                            <li>Параметры</li>
+                            <li>Отслеживание</li>
+                            <li>События</li>
+                            <li>Двунаправленная связь данных (v-model)</li>
+                            <li>Динамические компоненты</li>
+                            <li>Слоты</li>
+                            <li>Routing</li>
+                            <li>Маршруты</li>
+                        </ul>
+                        <li><a href="https://github.com/OlDen90/DD/tree/dz_5/" target="_blank">Одна из моих
+                                домашек</a> (не доделана). Выполнено:</li>
+                        <ul>
+                            <li>полноформатный режим</li>
+                            <li>переключение между страницами с помощью Routing</li>
+                            <li>анимация при нажатии на Меню</li>
+                            <li>меню - появление и фиксация выпадающего списка кнопок, пока не будет
+                                сброса нажатием где либо на экране или нажатием на кнопку внутри выпадающего списка.
+                            </li>
+                            <li>анимированный список - появление и фиксация выпадающего списка кнопок, пока не будет
+                                сброса нажатием где либо на экране или нажатием на кнопку внутри выпадающего списка.
+                            </li>
+                            <li>адаптивная длина текста (не более 2х строк) во вкладках Проекты и Задачи, в зависимости
+                                от ширины экрана или же смены ширины строки при наведении и появлении кнопки.</li>
+                            <li>поля поиска (не завершены) после активации держат фокус - черная рамка активна</li>
+                        </ul>
+                    </ul>
+                </ul>
+                <p class="about-user-text thick-text">Сейчас прохожу:</p>
+                <ul class="experience-list">
+                    <li><strong>WordPress</strong> - самостоятельное изучение по YouTube</li>
+                </ul>
+                <p class="about-user-text thick-text">Cледующие шаги которые сделаю:</p>
+                <ul class="experience-list">
+                    <li>Продолжу изучение Vue.js в результате которого будет создано функциональное десктопное
+                        приложение (без backend)</li>
+                </ul>
+            </div>
+
+            <!-- skills -->
+            <div class="skills">
+                <h3 class="main-content-title">Мои навыки:</h3>
+                <ul class="skills-list">
+                    <li>усидчивость</li>
+                    <li>работа с данными, работа с цифрами</li>
+                    <li>3d проектирование</li>
+                    <li>умение работать в команде, брать на себя роль лидера и руководителя</li>
+                    <li>умение работать в условиях горящих сроков и стресса</li>
+                    <li>готовность брать на себя ответственность и доводить проект до результата</li>
+                    <li>умение разобраться самостоятельно с новым направлением в работе</li>
+                    <li>не вижу препятствий, вижу цель</li>
+                </ul>
+            </div>
+
+            <!-- why -->
+            <div class="why">
+                <h3 class="main-content-title">Почему вам стоит взять меня на работу?</h3>
+                <ul class="why-list">
+                    <li>трудоголик с горящими глазами</li>
+                    <li>как для программиста открытый человек, со мной легко общаться, легко ставить задачи</li>
+                    <li>возможность обучить меня "под себя"</li>
+                    <li>покажу результат работы в короткое время</li>
+                    <li>постоянно совершенствую свои навыки и знания (убедиться в этом можно отследив прогресс развития
+                        качества моего кода)</li>
+                </ul>
+            </div>
+
+            <!-- Work Experience -->
+            <div class="work-experience">
+                <h3 class="main-content-title">
+                    Work Experience
+                </h3>
+                <!-- job 1 -->
+                <div>
+                    <h4 class="content-title">
+                        Инженер-проектировщик <span class="firm">ООО "УЭСП"</span>
+                    </h4>
+                    <p class="work-experience__time">
+                        Сентябрь 2014 - Июнь 2017 | РФ, Санкт-Петербург
+                    </p>
+                    <ul class="work-experience__list">
+                        <li>проектирование тепловых сетей</li>
+                        <li>проектирование систем оперативного дистанционного контроля</li>
+                        <li>проектирование электрохимзащиты тепловых сетей</li>
+                        <li>проектирование системы отопления зданий и строений</li>
+                        <li>расчет теплопотерь</li>
+                        <li>3D моделирование</li>
+                    </ul>
+                </div>
+                <!-- job 2 -->
+                <div>
+                    <h4 class="content-title">
+                        Инженер-проектировщик | главный инженер проекта <span class="firm">ООО "ФМ Инжиниринг"</span>
+                    </h4>
+                    <p class="work-experience__time">
+                        Июль 2017 - Август 2021 | РФ, Санкт-Петербург
+                    </p>
+                    <ul class="work-experience__list">
+                        <li>проектирование тепловых сетей</li>
+                        <li>проектирование систем оперативного дистанционного контроля</li>
+                        <li>проектирование электрохимзащиты тепловых сетей</li>
+                        <li>проектирование системы отопления зданий и строений</li>
+                        <li>расчет теплопотерь</li>
+                        <li>3D моделирование</li>
+                        <li>обследование существующих сетей</li>
+                        <li>согласование проектных решений с экспертизой</li>
+                        <li>технический надзор за выполнением строительных работ</li>
+                        <li>и пр.</li>
+                    </ul>
+                </div>
+                <!-- job 3 -->
+                <div>
+                    <h4 class="content-title">
+                        Студент <span class="firm">GeekBrains</span>
+                    </h4>
+                    <p class="work-experience__time">
+                        Январь 2022 - Октябрь 2022 | РФ, Санкт-Петербург
+                    </p>
+                    <ul class="work-experience__list">
+                        <li>Основы языка Python</li>
+                        <li>Git. Базовый курс</li>
+                        <li>Алгоритмы и структуры данных на Python</li>
+                        <li>HTML/CSS</li>
+                        <li>Базовый курс JavaScript</li>
+                        <li>Основы реляционных баз данных. MySQL</li>
+                        <!-- <li>Django Framework</li>
+                        <li>Клиент-серверные приложения на Python</li>
+                        <li>Agile, Scrum. Теория</li>
+                        <li>Командная разработка по методологии Agile: SCRUM (практика)</li> -->
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="content-title">
+                        Студент <span class="firm">Самообразование</span>
+                    </h4>
+                    <p class="work-experience__time">
+                        Октябрь 2022 - сейчас | РФ, Санкт-Петербург
+                    </p>
+                    <ul class="work-experience__list">
+                        <li>HTML/CSS (flex, GRID, SASS/SCSS, адаптивная и кроссбраузерная верстка)</li>
+                        <li>JQuery </li>
+                        <li>JavaScript</li>
+                        <li><a href="https://olden90.github.io/travelling/" target="_blank">Создан сайт о моих
+                                путешествиях</a></li>
+                        <li><a href="https://olden90.github.io/construction/" target="_blank">Создана заготовка
+                                строительного сайта</a></li>
+                        <li>Тестовые задания</li>
+                        <li>Webpack</li>
+                        <li>Node.js</li>
+                        <li>Vue.js 2</li>
+                        <li>Битрикс24</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Education -->
+            <div class="education">
+                <h3 class="main-content-title">Образование</h3>
+                <h4 class="university">Харьковский национальный университет строительства и архитектуры
+                </h4>
+                <h5 class="specialization">Санитарно-технический. Теплогазоснабжение и вентиляция</h5>
+                <p class="education-experience__time"> Сентябрь 2007 - Июнь 2012 | Украина, Харьков </p>
+            </div>
+            <!-- certificates -->
+            <div class="certificates">
+                <h3 class="main-content-title">Сертификаты</h3>
+                <ul class="certificates-list">
+                    <li> <a href="https://gb.ru/go/6FOLse" target="_blank" class="projects-link">HTML&CSS. Интерактивный
+                            курс</a>
+                    </li>
+                    <li> <a href="https://gb.ru/go/60pbIe" target="_blank" class="projects-link">HTML&CSS. Начальный
+                            уровень</a>
+                    </li>
+                    <li> <a href="https://gb.ru/go/nfC0xf" target="_blank" class="projects-link">HTML&CSS. Средний
+                            уровень</a>
+                    </li>
+                    <li> <a href="https://gb.ru/go/WBGFjd" target="_blank" class="projects-link">JavaScript. Начальный
+                            уровень</a>
+                    </li>
+                    <li> <a href="https://stepik.org/cert/1496838" target="_blank" class="projects-link">"Поколение
+                            Python": курс для начинающих</a>
+                    </li>
+                    <li> <a href="https://gb.ru/go/9pBfgm" target="_blank" class="projects-link">Python. Начальный
+                            уровень</a>
+                    </li>
+                    <li> <a href="https://gb.ru/go/E~BtH3" target="_blank" class="projects-link">Python. Уровень 1</a>
+                    </li>
+                    <li> <a href="https://gb.ru/go/iDuoXA" target="_blank" class="projects-link">Алгоритмы и структуры
+                            данных на Python</a>
+                    </li>
+                    <li> <a href="https://gb.ru/go/CUWMIx" target="_blank" class="projects-link">База данных MySql</a>
+                    </li>
+                    <li> <a href="https://gb.ru/go/oDWElA" target="_blank" class="projects-link">Английский язык.
+                            Pre-intermediate</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Sidebar (left) -->
+        <!-- aside === div -->
+        <aside class="sidebar">
+            <img src="img/photo.jpg" alt="user photo" class="photo">
+            <div class="shortly">
+                <!-- Contacts -->
+                <div class="contacts">
+                    <h3 class="sidebar-title">Contacts</h3>
+                    <div>
+                        <p>
+                            <a href="tel:+79533616937" class="call">+7 (953) 361-69-37</a>
+                        </p>
+                        <p>
+                            <a href="http://t.me/O1Den" class="telegram" target="_blank">t.me/O1Den</a>
+                        </p>
+                        <p>
+                            <a href="mailto:olden90@mail.ru" class="mail">olden90@mail.ru</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- Tech Skills -->
+                <div class="tech-skills">
+                    <h3 class="sidebar-title">Tech Skills</h3>
+                    <ul class="tech-skills-list">
+                        <li><span class="tech-skills-text">GIT</span></li>
+                        <li><span class="tech-skills-text">HTML5</span></li>
+                        <li><span class="tech-skills-text">CSS3</span></li>
+                        <li><span class="tech-skills-text">SASS/SCSS</span></li>
+                        <li><span class="tech-skills-text">адаптивная и кроссбраузерная верстка</span></li>
+                        <li><span class="tech-skills-text">верстка по макетам Figma, Marsy</span></li>
+                        <li><span class="tech-skills-text">JavaScript</span></li>
+                        <li><span class="tech-skills-text">Webpack</span></li>
+                        <li><span class="tech-skills-text">Vue.js 2</span></li>
+                        <li><span class="tech-skills-text">Node.js</span></li>
+                        <li><span class="tech-skills-text">jQuery</span></li>
+                        <li><span class="tech-skills-text">WordPress</span></li>
+                        <li><span class="tech-skills-text">SQL</span></li>
+                        <li><span class="tech-skills-text">MySQL</span></li>
+                        <li><span class="tech-skills-text">Python</span></li>
+                        <li><span class="tech-skills-text">Linux</span></li>
+                        <li><span class="tech-skills-text">Конструктор Stripo</span></li>
+                        <li><span class="tech-skills-text">Битрикс24</span></li>
+                    </ul>
+                </div>
+                <!-- Soft Skills -->
+                <!-- <div class="soft-skills">
+                    <h3 class="sidebar-title">Soft Skills</h3>
+                    <ul class="soft-skills-list">
+                        <li><span class="soft-skills-text">Scrum</span></li>
+                        <li><span class="soft-skills-text">Agile</span></li>
+                        <li><span class="soft-skills-text">GTD</span></li>
+                        <li><span class="soft-skills-text">Teamwork</span></li>
+                    </ul>
+                </div> -->
+            </div>
+        </aside>
+    </div>
+
 </body>
 
 </html>
