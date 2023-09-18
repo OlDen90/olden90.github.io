@@ -217,12 +217,12 @@
   margin-top: 80px;
   max-width: 1180px;
   margin: 0 auto;
-  padding: 0 30px;
 }
 .main .main__container .main__body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 0 30px;
 }
 .main .main__container .main__body .main__content {
   display: flex;
