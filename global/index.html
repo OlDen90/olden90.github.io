@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Анимация с иконками</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <a href="index.html" class="header__logo">
+                    <img src="img/logo.png" alt="">
+                </a>
+                <div class="header__menu menu">
+                    <div class="menu__icon">
+                        <span></span>
+                    </div>
+                    <div class="menu__body">
+                        <ul class="menu__list">
+                            <li><a href="index.html" class="menu__link">Mobile Top Up</a></li>
+                            <!-- вариант без JS: -->
+                            <!-- <li><a href="index.html" class="menu__link active">Mobile Top Up</a></li> -->
+                            <li><a href="pages/page_2_About.html" class="menu__link">About</a></li>
+                            <li><a href="pages/page_3_Rate.html" class="menu__link">Rate</a></li>
+                            <li><a href="pages/page_4_Help.html" class="menu__link">Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="https://www.google.ru" target="_blank" class="header__btn">Sign Up</a>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main__container">
+                <div class="main__body">
+                    <div class="main__content">
+                        <h2 class="main__title">Now Buy Your PIN or <span>Top Up</span></h2>
+                        <div class="main__sub-title">With Bank Transfer</div>
+                        <div class="main__text">We Make international calling simple, relible, and cheap basedon your
+                            unique calling behavior.</div>
+
+                        <div class="main__btn">
+                            <a href="https://www.google.ru" target="_blank">Get Started</a>
+                        </div>
+
+                        <div class="main__search">
+                            <input type="text" class="main__search-input" id="search-input"
+                                placeholder="Where do you want to call?" minlength="4" maxlength="12">
+                            <button type="button" class="main__search-btn" id="search-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27"
+                                    fill="none">
+                                    <path
+                                        d="M12.4267 20.9866C17.1518 20.9866 20.9822 17.1561 20.9822 12.431C20.9822 7.70594 17.1518 3.87549 12.4267 3.87549C7.70155 3.87549 3.87109 7.70594 3.87109 12.431C3.87109 17.1561 7.70155 20.9866 12.4267 20.9866Z"
+                                        stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M23.1208 23.1252L18.4688 18.4731" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="main__users">
+                            <ul class="main__users-pictures">
+                                <li><img src="img/photo/photo_1.png" alt="photo_1"></li>
+                                <li><img src="img/photo/photo_2.png" alt="photo_2"></li>
+                                <li><img src="img/photo/photo_3.png" alt="photo_3"></li>
+                                <li></li>
+                            </ul>
+                            <div class="main__users-text">45k+ Regular User. <span><a href="https://www.google.ru"
+                                        target="_blank">View
+                                        Price Plan</a></span></div>
+                        </div>
+                    </div>
+                    <div class="main__media">
+                        <div class="main__media-circless">
+                            <div class="main__media-circles">
+                                <div class="main__media-icons rotate-animation rotateIcons">
+                                    <div class="main__media-icon icon-1 slide-animation"></div>
+                                    <div class="main__media-icon icon-2 slide-animation"></div>
+                                    <div class="main__media-icon icon-3 slide-animation"></div>
+                                    <div class="main__media-icon icon-4 slide-animation"></div>
+                                    <div class="main__media-icon icon-5 slide-animation"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__media-girl">
+                            <img src="img/girl.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/burger.js"></script>
+</body>
+
+</html>
