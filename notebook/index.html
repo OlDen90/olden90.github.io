@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <title>Тестовое задание</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header lock-padding">
+            <div class="header__container">
+                <a href="index.html" class="header__logo">
+                    <img src="img/logo.png" alt="">
+                </a>
+                <a href="#note" class="header__btn popup-link">Написать</a>
+                <a href="#note" class="header__btn header__btn-max768 popup-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path opacity="0.16" d="M5 16L4 20L8 19L18 9L15 6L5 16Z" fill="white" />
+                        <path
+                            d="M5 16L4 20L8 19L19.5858 7.41421C20.3668 6.63316 20.3668 5.36683 19.5858 4.58579L19.4142 4.41421C18.6332 3.63316 17.3668 3.63317 16.5858 4.41421L5 16Z"
+                            stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M15 6L18 9" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M13 20H21" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </a>
+            </div>
+        </header>
+
+        <main class="notebook">
+            <div class="notebook__container">
+                <div class="notebook__top">
+                    <h2 class="notebook__title">Мой дневничок</h2>
+                    <div class="notebook__buttons">
+                        <button class="notebook__button notebook__button-new" onclick="changeButton('new')">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M4 6H20M4 12H14M4 18H8" stroke="#050F28" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path id="newArrow" d="M14 16L18 20M18 20L22 16M18 20L18 4" stroke="white"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>Сначала новые
+                        </button>
+                        <button class="notebook__button notebook__button-old" onclick="changeButton('old')">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M4 6H20M4 12H14M4 18H8" stroke="#050F28" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path id="oldArrow" d="M14 8L18 4M18 4L22 8M18 4L18 20" stroke="#88A1DE"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg> Сначала старые
+                        </button>
+                    </div>
+                </div>
+                <div class="notebook__items">
+                    <div class="notebook__item important__item">
+                        <div class="notebook__name">Чертовски важная заметка</div>
+                        <div class="notebook__text">
+                            <p> С другой стороны рамки и место обучения кадров позволяет оценить
+                                значение дальнейших направлений развития.</p>
+                            <p>
+                                Не следует, однако забывать, что сложившаяся структура организации позволяет выполнять
+                                важные задания по разработке позиций, занимаемых участниками в отношении поставленных
+                                задач.
+                            </p>
+                        </div>
+                        <div class="notebook__created">
+                            <div class="notebook__created-data">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path opacity="0.16"
+                                        d="M4 8H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V8Z"
+                                        fill="#88A1DE" />
+                                    <path d="M4 4H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V4Z"
+                                        stroke="#88A1DE" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M4 8H20" stroke="#88A1DE" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M16 3V5" stroke="#88A1DE" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M8 3V5" stroke="#88A1DE" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>22.10.2023
+                            </div>
+                            <div class="notebook__created-time">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <circle opacity="0.16" cx="12" cy="12" r="9" fill="#88A1DE" />
+                                    <circle cx="12" cy="12" r="9" stroke="#88A1DE" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M11 8V13H16" stroke="#88A1DE" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>10:00
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notebook__item">
+                        <div class="notebook__name">Что-то не такое важное, но тоже интересное</div>
+                        <div class="notebook__text">Идейные соображения высшего порядка, а также сложившаяся структура
+                            организации требуют определения и уточнения модели развития. Значимость этих проблем
+                            настолько очевидна, что сложившаяся структура организации представляет собой интересный
+                            эксперимент проверки существенных финансовых и административных условий.
+                        </div>
+                        <div class="notebook__created">
+                            <div class="notebook__created-data">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path opacity="0.16"
+                                        d="M4 8H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V8Z"
+                                        fill="#88A1DE" />
+                                    <path d="M4 4H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V4Z"
+                                        stroke="#88A1DE" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M4 8H20" stroke="#88A1DE" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M16 3V5" stroke="#88A1DE" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M8 3V5" stroke="#88A1DE" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>22.10.2023
+                            </div>
+                            <div class="notebook__created-time">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <circle opacity="0.16" cx="12" cy="12" r="9" fill="#88A1DE" />
+                                    <circle cx="12" cy="12" r="9" stroke="#88A1DE" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M11 8V13H16" stroke="#88A1DE" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>10:00
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notebook__item">
+                        <div class="notebook__name">Секретный рецепт сырников</div>
+                        <div class="notebook__text">
+                            <p>Таким образом новая модель организационной деятельности позволяет выполнять важные
+                                задания по разработке систем массового участия. </p>
+
+                            <p>Равным образом укрепление и развитие структуры требуют от нас анализа направлений
+                                прогрессивного развития.</p>
+                        </div>
+                        <div class="notebook__created">
+                            <div class="notebook__created-data">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path opacity="0.16"
+                                        d="M4 8H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V8Z"
+                                        fill="#88A1DE" />
+                                    <path d="M4 4H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V4Z"
+                                        stroke="#88A1DE" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M4 8H20" stroke="#88A1DE" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M16 3V5" stroke="#88A1DE" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M8 3V5" stroke="#88A1DE" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>20.10.2023
+                            </div>
+                            <div class="notebook__created-time">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <circle opacity="0.16" cx="12" cy="12" r="9" fill="#88A1DE" />
+                                    <circle cx="12" cy="12" r="9" stroke="#88A1DE" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M11 8V13H16" stroke="#88A1DE" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>17:00
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notebook__item">
+                        <div class="notebook__name">Мысли насущные после получения ЗП</div>
+                        <div class="notebook__text">Идейные соображения высшего порядка, а также постоянный
+                            количественный рост и сфера нашей активности позволяет выполнять важные задания по
+                            разработке соответствующий условий активизации.
+                            Дальнейшее развитие различных форм деятельности требуют от нас анализа условий активизации.
+                        </div>
+                        <div class="notebook__created">
+                            <div class="notebook__created-data">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path opacity="0.16"
+                                        d="M4 8H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V8Z"
+                                        fill="#88A1DE" />
+                                    <path d="M4 4H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V4Z"
+                                        stroke="#88A1DE" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M4 8H20" stroke="#88A1DE" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M16 3V5" stroke="#88A1DE" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M8 3V5" stroke="#88A1DE" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>20.10.2023
+                            </div>
+                            <div class="notebook__created-time">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <circle opacity="0.16" cx="12" cy="12" r="9" fill="#88A1DE" />
+                                    <circle cx="12" cy="12" r="9" stroke="#88A1DE" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M11 8V13H16" stroke="#88A1DE" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>10:00
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notebook__item">
+                        <div class="notebook__name">Секретный план захвата мира</div>
+                        <div class="notebook__text">Разнообразный и богатый опыт постоянный количественный рост и сфера
+                            нашей активности требуют от нас анализа дальнейших направлений развития. Значимость этих
+                            проблем настолько очевидна, что консультация с широким активом обеспечивает широкому кругу
+                            (специалистов) участие в формировании систем массового участия.
+                        </div>
+                        <div class="notebook__created">
+                            <div class="notebook__created-data">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path opacity="0.16"
+                                        d="M4 8H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V8Z"
+                                        fill="#88A1DE" />
+                                    <path d="M4 4H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V4Z"
+                                        stroke="#88A1DE" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M4 8H20" stroke="#88A1DE" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M16 3V5" stroke="#88A1DE" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M8 3V5" stroke="#88A1DE" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>17.10.2023
+                            </div>
+                            <div class="notebook__created-time">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <circle opacity="0.16" cx="12" cy="12" r="9" fill="#88A1DE" />
+                                    <circle cx="12" cy="12" r="9" stroke="#88A1DE" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M11 8V13H16" stroke="#88A1DE" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>15:00
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notebook__item">
+                        <div class="notebook__name">Список покупок на следующую неделю</div>
+                        <div class="notebook__text">Таким образом реализация намеченных плановых заданий в значительной
+                            степени обуславливает создание новых предложений. Задача организации, в особенности же рамки
+                            и место обучения кадров представляет собой интересный эксперимент проверки дальнейших
+                            направлений развития.
+                        </div>
+                        <div class="notebook__created">
+                            <div class="notebook__created-data">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path opacity="0.16"
+                                        d="M4 8H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V8Z"
+                                        fill="#88A1DE" />
+                                    <path d="M4 4H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V4Z"
+                                        stroke="#88A1DE" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M4 8H20" stroke="#88A1DE" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M16 3V5" stroke="#88A1DE" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M8 3V5" stroke="#88A1DE" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>16.10.2023
+                            </div>
+                            <div class="notebook__created-time">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <circle opacity="0.16" cx="12" cy="12" r="9" fill="#88A1DE" />
+                                    <circle cx="12" cy="12" r="9" stroke="#88A1DE" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M11 8V13H16" stroke="#88A1DE" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>10:10
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="notebook__button-show-more" id="showMoreButton">Показать больше</button>
+                <div class="pagination">
+                    <button id="prevPage" onclick="prevPage()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                            <circle opacity="0.16" cx="17" cy="17" r="12.75" fill="#88A1DE" />
+                            <circle cx="17" cy="17" r="12.75" stroke="#88A1DE" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M17 12.75L12.75 17M12.75 17L17 21.25M12.75 17H21.25" stroke="#88A1DE"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <div id="pageButtons">
+                        <!-- Кнопки для номеров страниц будут добавлены с использованием JavaScript. Ниже временное решение (заглушки по макету) -->
+                        <ul>
+                            <li><button class="pageButton active" onclick="toggleActive(this)">1</button></li>
+                            <li><button class="pageButton" onclick="toggleActive(this)">2</button></li>
+                            <li><button class="pageButton" onclick="toggleActive(this)">3</button></li>
+                            <li><button class="pageButton" onclick="toggleActive(this)">4</button></li>
+                            <li><button class="pageButton" onclick="toggleActive(this)">5</button></li>
+                        </ul>
+                    </div>
+                    <button id="nextPage" onclick="nextPage()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                            <circle opacity="0.16" cx="17" cy="17" r="12.75" fill="#88A1DE" />
+                            <circle cx="17" cy="17" r="12.75" stroke="#88A1DE" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M17 21.25L21.25 17M21.25 17L17 12.75M21.25 17H12.75" stroke="#88A1DE"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+        </main>
+        <footer class="footer lock-padding">
+            <div class="footer__container">
+                <div class="footer__text">Мой дневничок</div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Кнопка наверх -->
+    <div class="up-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;" width="24" height="24">
+            <symbol id="arrow-up-short" viewBox="0 0 24 24" fill="none">
+                <path d="M19 12L12 5L5 12M12 5L12 19" stroke="#050F28" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </symbol>
+        </svg>
+
+        <div class="btn-up btn-up_hide">
+            <svg class="btn-up-icon" role="img" aria-label="Прокрутить страницу к началу">
+                <use xlink:href="#arrow-up-short"></use>
+            </svg>
+            <div class="btn-up-text">Наверх</div>
+        </div>
+    </div>
+
+    <!-- popup -->
+    <div id="note" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#header" class="popup__close close-popup">
+                    <div class="close__icon">
+                        <span></span>
+                    </div>
+                </a>
+                <h2>Новая запись</h2>
+                <form id="dataForm" action="" method="post">
+                    <div class="popup__top">
+                        <div class="popup__item popup__item-left">
+                            <label for="title">Заголовок</label>
+                            <input type="text" id="title" name="Заголовок" maxlength="200" required>
+                            <div class="validation-message">
+                                <div class="validation-message__img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <circle opacity="0.16" cx="12" cy="12" r="9" fill="#FF832A" />
+                                        <circle cx="12" cy="12" r="9" stroke="#FF832A" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <rect x="12" y="16" width="0.01" height="0.01" stroke="#FF832A" stroke-width="3"
+                                            stroke-linejoin="round" />
+                                        <path d="M12 12L12 8" stroke="#FF832A" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    <p>Обязательное поле</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup__item popup__item-right">
+                            <label for="date">Дата:</label>
+                            <input class="popup__date" type="datetime-local" id="date" name="Дата" required>
+                            <div class="validation-message">
+                                <div class="validation-message__img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <circle opacity="0.16" cx="12" cy="12" r="9" fill="#FF832A" />
+                                        <circle cx="12" cy="12" r="9" stroke="#FF832A" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <rect x="12" y="16" width="0.01" height="0.01" stroke="#FF832A" stroke-width="3"
+                                            stroke-linejoin="round" />
+                                        <path d="M12 12L12 8" stroke="#FF832A" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    <p>Обязательное поле</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup__item">
+                        <label for="note">Заметка</label>
+                        <textarea id="note" name="Заметка" maxlength="2000" required></textarea>
+                        <div class="validation-message">
+                            <div class="validation-message__img">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <circle opacity="0.16" cx="12" cy="12" r="9" fill="#FF832A" />
+                                    <circle cx="12" cy="12" r="9" stroke="#FF832A" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <rect x="12" y="16" width="0.01" height="0.01" stroke="#FF832A" stroke-width="3"
+                                        stroke-linejoin="round" />
+                                    <path d="M12 12L12 8" stroke="#FF832A" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <p>Обязательное поле</p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <input type="submit" value="Поделиться наболевшим">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Файлы JS скриптов -->
+    <script src="js/script.js"></script>
+    <script src="js/popups.js"></script>
+    <!-- <script src="js/pagination.js"></script> -->
+
+
+
+
+
+
+
+    <!-- Попытки подключения Firebase -->
+
+    <!-- Подключение Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-storage.js"></script>
+
+    <script>
+        // Инициализация Firebase с использованием конфигурации
+        var firebaseConfig = {
+            apiKey: "AIzaSyDu7j_acykzRf7etzB3yeg_Fob3OY-O8t4",
+            authDomain: "notes-bdb62.firebaseapp.com",
+            projectId: "notes-bdb62",
+            storageBucket: "notes-bdb62.appspot.com",
+            messagingSenderId: "769596767385",
+            appId: "1:769596767385:web:3d977d9eebe6b29ac90c08",
+
+            databaseURL: "https://notes-bdb62-default-rtdb.europe-west1.firebasedatabase.app",
+
+        };
+        firebase.initializeApp(firebaseConfig);
+
+        // Обработчик отправки формы
+        document.getElementById("dataForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const title = document.getElementById("title").value;
+            const date = document.getElementById("date").value;
+            const note = document.getElementById("note").value;
+
+            const database = firebase.database();
+            const notesRef = database.ref("notes");
+
+            notesRef.push({
+                Заголовок: title,
+                Дата: date,
+                Заметка: note
+            });
+
+            document.getElementById("title").value = "";
+            document.getElementById("date").value = "";
+            document.getElementById("note").value = "";
+        });
+    </script>
+
+</body>
+
+</html>
