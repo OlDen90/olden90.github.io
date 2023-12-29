@@ -106,6 +106,10 @@ body {
     padding: 0px 0px 0px 17px;
 }
 
+.no-bullet {
+    list-style-type: none;
+}
+
 .thick-text {
     font-size: 18px;
     font-weight: 700;
